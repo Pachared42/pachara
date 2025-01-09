@@ -2,7 +2,7 @@ import Bio from "./components/Bio";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-import Skillss from "./components/Skillss";
+import Skills from "./components/Skills";
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
         <Navbar />
         <Projects />
         <Bio />
-        <Skillss />
+        <Skills />
       </div>
     </div>
   );

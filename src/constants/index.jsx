@@ -31,9 +31,11 @@ export const NAVIGATION_LINKS = [
 
 export const HERO = {
   name: "Pachara",
-  greet: "Front End Developer",
+  greet: "Front-end Developer",
+  greet2: "Back-end Developer",
+  greet3: "Full-stack Developer",
   description:
-    "I am a passionate frontend developer with a knack for creating beautiful and functional user interfaces. I like transforming ideas into engaging web experiences for over a decade.",
+    "ฉันเป็นนักพัฒนา Front End Developer ที่มีความหลงใหลในการสร้างอินเทอร์เฟซผู้ใช้ที่สวยงามและใช้งานได้ดี ฉันมุ่งมั่นที่จะเปลี่ยนไอเดียให้กลายเป็นประสบการณ์เว็บที่น่าหลงใหล และยังมีเป้าหมายที่จะพัฒนาทักษะเพื่อก้าวสู่การเป็น Full Stack Developer",
 };
 
 export const PROJECTS = [
@@ -43,7 +45,7 @@ export const PROJECTS = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis. Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.",
     image: projectImage1,
-    githubLink: "https://github.com/user/personal-portfolio",
+    githubLink: "https://github.com/Pachared42/Portfolio-pachared",
   },
   {
     id: 2,
@@ -58,7 +60,7 @@ export const PROJECTS = [
     name: "Task Management Tool",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis. Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.",
-    image: projectImage3,
+    image: projectImage2,
     githubLink: "https://github.com/user/task-management-tool",
   },
   {

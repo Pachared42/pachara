@@ -23,7 +23,7 @@ const iconVariants = (index) => {
   };
 };
 
-const Skillss = () => {
+const Skills = () => {
   return (
     <div className="border-b border-neutral-800 pb-24">
       <h1 className="my-20 text-center text-5xl">Skills</h1>
@@ -54,4 +54,4 @@ const Skillss = () => {
   );
 };
 
-export default Skillss;
+export default Skills;
