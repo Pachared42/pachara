@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import { HERO } from "../constants";
-import pachara from "../assets/pachara3.jpg";
+import pachara from "../assets/pachara.jpg";
 import { motion } from "framer-motion";
 
 // Variants for container animations
