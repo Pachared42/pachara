@@ -3,7 +3,10 @@ import { PROJECTS } from "../constants";
 const Projects = () => {
   return (
     <section className="pt-20" id="projects">
-      <h2 className="mb-12 text-center text-4xl lg:text-6xl font-bold">Projects</h2>
+      <h2 className="mb-1 text-center text-4xl lg:text-6xl font-bold">PROJECT</h2>
+      <p className="tracking-[0.5em] text-center text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400 text-[1.2rem]">
+        ดูรายละเอียดเพิ่มเติม
+      </p>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {PROJECTS.map((project) => (
           <div
@@ -16,18 +19,18 @@ const Projects = () => {
               alt={project.name}
               className="h-100 w-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 backdrop-blur-lg transition-opacity duration-500 group-hover:opacity-100 bg-gradient-to-t from-black via-transparent to-transparent">
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 backdrop-blur-lg transition-opacity duration-250 group-hover:opacity-100 bg-gradient-to-t from-black via-transparent to-transparent">
               {/* ลดขนาดของตัวหนังสือ */}
-              <h3 className="text-xl font-semibold">{project.name}</h3>
-              <p className="mb-4 px-4 text-center text-sm">{project.description}</p>
+              <h3 className="mb-8 text-2xl font-semibold">{project.name}</h3>
+              <p className="mb-8 px-4 text-center text-sm text-balance">{project.description}</p>
               <a
                 href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-white px-4 py-2 text-sm text-black hover:bg-gray-200 transition-transform duration-300"
+                className="z-[1] padding-20  hover:bg-white rounded-3xl  text-white font-semibold hover:text-black py-3 px-10  border-[0.1px] border-white hover:border-transparent--"
               >
                 <div className="flex items-center">
-                  <span>View on GitHub</span>
+                  <span>เข้าชมบน GitHub</span>
                 </div>
               </a>
             </div>

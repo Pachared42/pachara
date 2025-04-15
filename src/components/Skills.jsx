@@ -25,32 +25,35 @@ const iconVariants = (index) => {
 
 const Skills = () => {
   return (
-    <div className="border-b border-neutral-800 pb-24">
-      <h1 className="my-20 text-center text-5xl">Skills</h1>
-      <div className="flex flex-wrap items-center justify-center gap-4 p-4">
-        {SKILLS.map((skill, index) => (
-          <motion.div
-            variants={iconVariants(index)}
-            initial="initial"
-            animate="animate"
-            key={index}
-            className="rounded-3xl border-4 border-none p-4 flex flex-col items-center"
-          >
-            {[
-              skill.icon1,
-              skill.icon2,
-              skill.icon3,
-              skill.icon4,
-              skill.icon5,
-            ].map((icon, i) => (
-              <div key={i} className="flex items-center justify-center">
-                {icon}
-              </div>
-            ))}
-          </motion.div>
-        ))}
-      </div>
-    </div>
+      <section className="flex max-w-4xl flex-col pt-20" id="skills">
+        <h1 className="mb-1 text-center text-4xl lg:text-6xl font-bold">SKILL</h1>
+        <p className="tracking-[0.5em] text-center text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400 text-[1.2rem]">
+          ดูรายละเอียดเพิ่มเติม
+        </p>
+        <div className="flex flex-wrap items-center justify-center gap-4 p-4">
+          {SKILLS.map((skill, index) => (
+            <motion.div
+              variants={iconVariants(index)}
+              initial="initial"
+              animate="animate"
+              key={index}
+              className="rounded-3xl border-4 border-none p-4 flex flex-col items-center"
+            >
+              {[
+                skill.icon1,
+                skill.icon2,
+                skill.icon3,
+                skill.icon4,
+                skill.icon5,
+              ].map((icon, i) => (
+                <div key={i} className="flex items-center justify-center">
+                  {icon}
+                </div>
+              ))}
+            </motion.div>
+          ))}
+        </div>
+      </section>
   );
 };
 

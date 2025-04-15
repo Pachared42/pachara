@@ -1,18 +1,22 @@
-import Bio from "./components/Bio";
+import About from "./components/About";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import StarsCanvas from './components/main/StarsBackground';
 
 const App = () => {
   return (
-    <div className="relative h-full overflow-y-auto antialiased">
-      <div className="fixed inset-0 bg-fixed bg-cover bg-center bg-img"></div>
+    <div className="relative bg-fixed bg-cover bg-center bg-img">
+      {/* ใส่ฉากหลัง Star */}
+      <StarsCanvas />
+
+      {/* เนื้อหาเว็บ */}
       <div className="relative z-10 flex flex-col items-center p-4 space-y-8 container mx-auto">
         <Hero />
         <Navbar />
         <Projects />
-        <Bio />
+        <About />
         <Skills />
       </div>
     </div>
@@ -20,3 +24,4 @@ const App = () => {
 };
 
 export default App;
+

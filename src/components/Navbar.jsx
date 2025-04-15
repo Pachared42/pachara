@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/LogoPachara2.png";
+import logo from "/LogoPachara2.png";
 import { NAVIGATION_LINKS } from "../constants";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
@@ -15,7 +15,7 @@ const Navbar = () => {
     e.preventDefault();
     const targetElement = document.querySelector(href);
     if (targetElement) {
-      const offset = -85;
+      const offset = -35;
       const elementPosition = targetElement.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.scrollY + offset;
 
@@ -45,7 +45,7 @@ const Navbar = () => {
                 {NAVIGATION_LINKS.map((item, index) => (
                   <li key={index}>
                     <a
-                      className="text-sm hover:text-red-500"
+                      className="text-base hover:text-red-500"
                       href={item.href}
                       onClick={(e) => handleLinkClick(e, item.href)}
                     >

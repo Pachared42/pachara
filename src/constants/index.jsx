@@ -7,12 +7,12 @@ import {
   FaInstagram,
 } from "react-icons/fa6";
 
-import projectImage1 from "../assets/project1.jpeg";
-import projectImage2 from "../assets/project2.jpeg";
-import projectImage3 from "../assets/project3.jpeg";
-import projectImage4 from "../assets/project4.jpeg";
-import projectImage5 from "../assets/project5.jpeg";
-import projectImage6 from "../assets/project6.jpeg";
+import projectImage1 from "/project1.jpg";
+import projectImage2 from "/project2.jpg";
+import projectImage3 from "/project3.jpg";
+import projectImage4 from "/project4.jpg";
+import projectImage5 from "/project5.jpg";
+import projectImage6 from "/project6.jpg";
 
 import { RiReactjsLine } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -21,21 +21,22 @@ import { FaHtml5 } from "react-icons/fa";
 import { TiCss3 } from "react-icons/ti";
 
 export const NAVIGATION_LINKS = [
-  { label: "Projects", href: "#projects" },
-  { label: "Bio", href: "#bio" },
-  { label: "Skills", href: "#skills" },
-  { label: "Work Experience", href: "#work" },
-  { label: "Education", href: "#education" },
-  { label: "Contact", href: "#contact" },
+  { label: "ผลงาน", href: "#projects" },
+  { label: "ประวัติ", href: "#bio" },
+  { label: "ทักษะ", href: "#skills" },
+  { label: "ประสบการณ์", href: "#work" },
+  { label: "การศึกษา", href: "#education" },
+  { label: "ติดต่อ", href: "#contact" },
 ];
 
 export const HERO = {
   name: "Pachara",
-  greet: "Front-end Developer",
-  greet2: "Back-end Developer",
-  greet3: "Full-stack Developer",
+  greet: "Front-End Developer",
+  greet2: "Back-End Developer",
+  greet3: "Full-Stack Developer",
+  greet4: "Software Engineer",
   description:
-    "ฉันเป็นนักพัฒนา Front End Developer ที่มีความหลงใหลในการสร้างอินเทอร์เฟซผู้ใช้ที่สวยงามและใช้งานได้ดี ฉันมุ่งมั่นที่จะเปลี่ยนไอเดียให้กลายเป็นประสบการณ์เว็บที่น่าหลงใหล และยังมีเป้าหมายที่จะพัฒนาทักษะเพื่อก้าวสู่การเป็น Full Stack Developer",
+    "ฉันเป็น Front-End Developer ที่หลงใหลในการออกแบบและสร้างสรรค์ UI ที่สวยงามและตอบโจทย์ประสบการณ์ผู้ใช้งาน พร้อมมุ่งมั่นพัฒนาทักษะด้านการเขียนโค้ดและแก้ปัญหาอย่างเป็นระบบ เพื่อเติบโตสู่การเป็น Software Engineer ในอนาคต และเปิดรับความท้าทายใหม่ ๆ อยู่เสมอ",
 };
 
 export const PROJECTS = [
@@ -45,7 +46,7 @@ export const PROJECTS = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis. Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.",
     image: projectImage1,
-    githubLink: "https://github.com/Pachared42/Portfolio-pachared",
+    githubLink: "https://github.com/Pachared42/pachara",
   },
   {
     id: 2,
@@ -60,7 +61,7 @@ export const PROJECTS = [
     name: "Task Management Tool",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis. Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.",
-    image: projectImage2,
+    image: projectImage3,
     githubLink: "https://github.com/user/task-management-tool",
   },
   {
@@ -89,10 +90,9 @@ export const PROJECTS = [
   },
 ];
 
-export const BIO = [
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis. Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis. Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis. Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.",
+export const ABOUT = [
+  "ผมเป็นนักศึกษาระดับปริญญาตรี จากมหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ ศูนย์สุพรรณบุรี มีความหลงใหลในการออกแบบและพัฒนาเว็บไซต์ โดยเฉพาะในสายงาน Front-End Developer พร้อมให้ความสำคัญกับการสร้างสรรค์ผลงานที่สวยงามและตอบโจทย์ผู้ใช้งานอยู่เสมอ",
+  "ด้วยความมุ่งมั่นในการเรียนรู้และพัฒนาทักษะอย่างต่อเนื่อง ผมตั้งเป้าหมายในการเติบโตสู่การเป็น Software Engineer โดยเน้นการออกแบบซอฟต์แวร์ที่มีคุณภาพ และประสบการณ์ผู้ใช้ที่ดีเยี่ยมควบคู่กันไป"
 ];
 
 export const SKILLS = [
