@@ -30,7 +30,7 @@ const Hero = () => {
           variants={container(0)}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="my-8 p-2 text-5xl font-bold md:text-5xl lg:text-[8rem] lg:leading-[8rem]"
+          className="mb-8 p-2 text-5xl font-bold md:text-5xl lg:text-[8rem] lg:leading-[8rem]"
         >
           {HERO.name}
         </motion.h2>
