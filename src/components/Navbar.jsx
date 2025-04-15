@@ -15,7 +15,7 @@ const Navbar = () => {
     e.preventDefault();
     const targetElement = document.querySelector(href);
     if (targetElement) {
-      const offset = -35;
+      const offset = -25;
       const elementPosition = targetElement.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.scrollY + offset;
 
@@ -45,7 +45,7 @@ const Navbar = () => {
                 {NAVIGATION_LINKS.map((item, index) => (
                   <li key={index}>
                     <a
-                      className="text-base hover:text-red-500"
+                      className="text-white hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 bg-clip-text"
                       href={item.href}
                       onClick={(e) => handleLinkClick(e, item.href)}
                     >

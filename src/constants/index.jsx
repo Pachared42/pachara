@@ -14,15 +14,27 @@ import projectImage4 from "/project4.jpg";
 import projectImage5 from "/project5.jpg";
 import projectImage6 from "/project6.jpg";
 
+// Skills icons
 import { RiReactjsLine } from "react-icons/ri";
+import { SiPhp } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { IoLogoJavascript } from "react-icons/io5";
+import { DiJavascript } from "react-icons/di";
 import { FaHtml5 } from "react-icons/fa";
-import { TiCss3 } from "react-icons/ti";
+import { FaCss3Alt } from "react-icons/fa";
+
+// Tools icons
+import { VscVscodeInsiders } from "react-icons/vsc";
+import { IoLogoGithub } from "react-icons/io5";
+import { SiXampp } from "react-icons/si";
+import { SiLaragon } from "react-icons/si";
+
+// Database icons
+import { SiMysql } from "react-icons/si";
+
 
 export const NAVIGATION_LINKS = [
   { label: "ผลงาน", href: "#projects" },
-  { label: "ประวัติ", href: "#bio" },
+  { label: "ประวัติ", href: "#about" },
   { label: "ทักษะ", href: "#skills" },
   { label: "ประสบการณ์", href: "#work" },
   { label: "การศึกษา", href: "#education" },
@@ -97,30 +109,70 @@ export const ABOUT = [
 
 export const SKILLS = [
   {
-    icon1: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-9xl" />,
+    skill1: <RiReactjsLine className="text-4xl lg:text-8xl text-[#61DAFB]" />,
     name: "React",
     experience: "",
   },
   {
-    icon2: (
-      <RiTailwindCssFill className="text-4xl text-sky-400/100 lg:text-9xl" />
-    ),
+    skill2: <SiPhp className="text-4xl lg:text-8xl text-[#8892BF]" />,
+    name: "PHP",
+    experience: "",
+  },
+  {
+    skill3:
+      <RiTailwindCssFill className="text-4xl lg:text-8xl text-[#38BDF8]" />,
     name: "Tailwind CSS",
     experience: "",
   },
   {
-    icon3: <IoLogoJavascript className="text-4xl text-yellow-400 lg:text-9xl" />,
-    name: "JavaScript",
-    experience: "",
-  },
-  {
-    icon4: <FaHtml5 className="text-4xl text-red-600 lg:text-9xl" />,
+    skill4: <FaHtml5 className="text-4xl lg:text-8xl text-[#E34F26]" />,
     name: "HTML",
     experience: "",
   },
   {
-    icon5: <TiCss3 className="text-4xl text-blue-500 lg:text-9xl" />,
-    name: "Node.js",
+    skill5: <FaCss3Alt className="text-4xl lg:text-8xl text-[#264DE4]" />,
+    name: "CSS",
+    experience: "",
+  },
+  {
+    skill6: <DiJavascript className="text-4xl lg:text-[105px] text-[#F7DF1E]" />,
+    name: "JavaScript",
+    experience: "",
+  },
+  {
+    skill7: <IoLogoGithub className="text-4xl lg:text-8xl text-purple-700" />,
+    name: "GitHub",
+    experience: "",
+  },
+];
+
+export const TOOLS = [
+  {
+    tool1: <VscVscodeInsiders className="text-4xl lg:text-8xl text-[#007ACC]" />,
+    name: "Visual Studio Code",
+    experience: "",
+  },
+  {
+    tool2: <IoLogoGithub className="text-4xl lg:text-8xl text-[#586069]" />,
+    name: "GitHub",
+    experience: "",
+  },
+  {
+    tool3: <SiXampp className="text-4xl lg:text-[85px] text-[#FF7A00]" />,
+    name: "XAMPP",
+    experience: "",
+  },
+  {
+    tool3: <SiLaragon className="text-4xl lg:text-[85px] text-[#1D7A8C]" />,
+    name: "Laragon",
+    experience: "",
+  },
+];
+
+export const DATABASES = [
+  {
+    database1: <SiMysql className="text-4xl lg:text-[115px] text-[#4479A1]" />,
+    name: "MySQL",
     experience: "",
   },
 ];
