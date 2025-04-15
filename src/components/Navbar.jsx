@@ -36,7 +36,7 @@ const Navbar = () => {
         >
           <div className="flex items-center justify-between gap-6">
             <div>
-              <a href="#">
+              <a href="/">
                 <img src={logo} width={100} alt="logo" />
               </a>
             </div>
@@ -61,7 +61,7 @@ const Navbar = () => {
         <div className="rounded-lg backdrop-blur-md lg:hidden">
           <div className="flex items-center justify-between">
             <div>
-              <a href="#">
+              <a href="/">
                 <p className="m-3">Pachara</p>
               </a>
             </div>
