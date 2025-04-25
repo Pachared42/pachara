@@ -125,7 +125,7 @@ const Skills = () => {
         </motion.p>
         <AnimatedItemGroup
           data={TOOLS}
-          extractItems={(item) => [item.tool1, item.tool2, item.tool3, item.tool4]}
+          extractItems={(item) => [item.tool1, item.tool2, item.tool3, item.tool4, item.tool5, item.tool6]}
         />
       </motion.div>
 

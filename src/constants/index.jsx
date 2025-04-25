@@ -27,6 +27,8 @@ import { VscVscodeInsiders } from "react-icons/vsc";
 import { IoLogoGithub } from "react-icons/io5";
 import { SiXampp } from "react-icons/si";
 import { SiLaragon } from "react-icons/si";
+import { SiAdobeillustrator } from "react-icons/si";
+import { SiAdobephotoshop } from "react-icons/si";
 
 // Database icons
 import { SiMysql } from "react-icons/si";
@@ -163,8 +165,18 @@ export const TOOLS = [
     experience: "",
   },
   {
-    tool3: <SiLaragon className="text-4xl lg:text-[85px] text-[#1D7A8C]" />,
+    tool4: <SiLaragon className="text-4xl lg:text-[85px] text-[#1D7A8C]" />,
     name: "Laragon",
+    experience: "",
+  },
+  {
+    tool5: <SiAdobeillustrator className="text-4xl lg:text-[85px] text-[#FF9A00]" />,
+    name: "Adobe Illustrator",
+    experience: "",
+  },
+  {
+    tool6: <SiAdobephotoshop className="text-4xl lg:text-[85px] text-[#31A8FF]" />,
+    name: "Adobe Photoshop",
     experience: "",
   },
 ];
