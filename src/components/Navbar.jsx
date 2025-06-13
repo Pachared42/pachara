@@ -59,7 +59,7 @@ const Navbar = () => {
         </div>
         {/* Mobile Menu */}
         <div className="rounded-lg backdrop-blur-md lg:hidden">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between mx-5">
             <div>
               <a href="/">
                 <p className="m-3">Pachara</p>
@@ -79,7 +79,7 @@ const Navbar = () => {
             </div>
           </div>
           {isMobileMenuOpen && (
-            <ul className="ml-4 mt-4 flex flex-col gap-4 backdrop-blur-md">
+            <ul className="ml-8 mt-4 mb-4 flex flex-col gap-4 backdrop-blur-md">
               {NAVIGATION_LINKS.map((item, index) => (
                 <li key={index}>
                   <a
