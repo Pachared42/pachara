@@ -4,6 +4,9 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import StarsCanvas from './components/main/StarsBackground';
+import Experience from "./components/Experience";
+import Education from "./components/Education";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -13,11 +16,14 @@ const App = () => {
 
       {/* เนื้อหาเว็บ */}
       <div className="relative z-10 flex flex-col items-center p-8 space-y-8 container mx-auto">
-        <Hero />
         <Navbar />
+        <Hero />
         <Projects />
         <About />
         <Skills />
+        {/*<Experience />
+        <Education />
+        <Contact />*/}
       </div>
     </div>
   );

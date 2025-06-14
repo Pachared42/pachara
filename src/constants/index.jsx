@@ -38,7 +38,7 @@ export const NAVIGATION_LINKS = [
   { label: "ผลงาน", href: "#projects" },
   { label: "ประวัติ", href: "#about" },
   { label: "ทักษะ", href: "#skills" },
-  { label: "ประสบการณ์", href: "#work" },
+  { label: "ประสบการณ์", href: "#experience" },
   { label: "การศึกษา", href: "#education" },
   { label: "ติดต่อ", href: "#contact" },
 ];
@@ -237,23 +237,11 @@ export const SOCIAL_MEDIA_LINKS = [
   },
   {
     href: "https://x.com/",
-    icon: <FaDiscord fontSize={25} className="hover:opacity-80" />,
-  },
-  {
-    href: "https://x.com/",
     icon: <FaInstagram fontSize={25} className="hover:opacity-80" />,
-  },
-  {
-    href: "https://x.com/",
-    icon: <FaXTwitter fontSize={25} className="hover:opacity-80" />,
   },
   {
     href: "https://github.com/",
     icon: <FaGithub fontSize={25} className="hover:opacity-80" />,
-  },
-  {
-    href: "https://www.linkedin.com/",
-    icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
   },
 ];
 
