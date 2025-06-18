@@ -111,70 +111,60 @@ export const ABOUT = [
 
 export const SKILLS = [
   {
-    skill1: <RiReactjsLine className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#61DAFB]" />,
+    skill1: <RiReactjsLine className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#61DAFB]" />,
     name: "React",
     experience: "",
   },
   {
-    skill2: <SiPhp className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#8892BF]" />,
+    skill2: <SiPhp className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#8892BF]" />,
     name: "PHP",
     experience: "",
   },
   {
-    skill3: <RiTailwindCssFill className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#38BDF8]" />,
+    skill3: <RiTailwindCssFill className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#38BDF8]" />,
     name: "Tailwind CSS",
     experience: "",
   },
   {
-    skill4: <FaHtml5 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#E34F26]" />,
+    skill4: <FaHtml5 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#E34F26]" />,
     name: "HTML",
     experience: "",
   },
   {
-    skill5: <FaCss3Alt className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#264DE4]" />,
+    skill5: <FaCss3Alt className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#264DE4]" />,
     name: "CSS",
     experience: "",
   },
   {
-    skill6: <DiJavascript className="text-4xl sm:text-5xl md:text-[75px] lg:text-[90px] xl:text-[105px] text-[#F7DF1E]" />,
+    skill6: <DiJavascript className="text-3xl sm:text-5xl md:text-[75px] lg:text-[90px] xl:text-[105px] text-[#F7DF1E]" />,
     name: "JavaScript",
-    experience: "",
-  },
-  {
-    skill7: <IoLogoGithub className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-purple-700" />,
-    name: "GitHub",
     experience: "",
   },
 ];
 
 export const TOOLS = [
   {
-    tool1: <VscVscodeInsiders className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#007ACC]" />,
+    tool1: <VscVscodeInsiders className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#007ACC]" />,
     name: "Visual Studio Code",
     experience: "",
   },
   {
-    tool2: <IoLogoGithub className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#586069]" />,
+    tool2: <IoLogoGithub className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#586069]" />,
     name: "GitHub",
     experience: "",
   },
   {
-    tool3: <SiXampp className="text-4xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FF7A00]" />,
+    tool3: <SiXampp className="text-3xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FF7A00]" />,
     name: "XAMPP",
     experience: "",
   },
   {
-    tool4: <SiLaragon className="text-4xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#1D7A8C]" />,
-    name: "Laragon",
-    experience: "",
-  },
-  {
-    tool5: <SiAdobeillustrator className="text-4xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FF9A00]" />,
+    tool4: <SiAdobeillustrator className="text-3xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FF9A00]" />,
     name: "Adobe Illustrator",
     experience: "",
   },
   {
-    tool6: <SiAdobephotoshop className="text-4xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#31A8FF]" />,
+    tool5: <SiAdobephotoshop className="text-3xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#31A8FF]" />,
     name: "Adobe Photoshop",
     experience: "",
   },
@@ -182,12 +172,11 @@ export const TOOLS = [
 
 export const DATABASES = [
   {
-    database1: <SiMysql className="text-4xl sm:text-5xl md:text-[80px] lg:text-[100px] xl:text-[115px] text-[#4479A1]" />,
+    database1: <SiMysql className="text-3xl sm:text-5xl md:text-[80px] lg:text-[100px] xl:text-[115px] text-[#4479A1]" />,
     name: "MySQL",
     experience: "",
   },
 ];
-
 
 export const EXPERIENCES = [
   {
