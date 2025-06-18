@@ -91,8 +91,7 @@ const Skills = () => {
         </motion.h1>
         <motion.p
           variants={fadeUpSubText}
-          className="tracking-[0.5em] text-center text-transparent font-light pb-5 
-          bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400 text-[1.2rem]"
+          className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400 text-[1.2rem]"
         >
           ดูรายละเอียดเพิ่มเติม
         </motion.p>
@@ -119,8 +118,7 @@ const Skills = () => {
         </motion.h1>
         <motion.p
           variants={fadeUpSubText}
-          className="tracking-[0.5em] text-center text-transparent font-light pb-5 
-          bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400 text-[1.2rem]"
+          className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400 text-[1.2rem]"
         >
           ดูรายละเอียดเพิ่มเติม
         </motion.p>
@@ -140,8 +138,7 @@ const Skills = () => {
         </motion.h1>
         <motion.p
           variants={fadeUpSubText}
-          className="tracking-[0.5em] text-center text-transparent font-light pb-5 
-          bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400 text-[1.2rem]"
+          className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400 text-[1.2rem]"
         >
           ดูรายละเอียดเพิ่มเติม
         </motion.p>
