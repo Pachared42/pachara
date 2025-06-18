@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 // ฟังก์ชันสำหรับสร้าง animation เด้ง ๆ
 const floatingVariants = (index) => {
-  const amplitude = 5 + index * 2.5;
+  const amplitude = 2 + index * 1; // ลดค่าระยะสูงขึ้นลงให้เล็กลง
   const duration = 6 + index * 4;
 
   return {
@@ -21,6 +21,7 @@ const floatingVariants = (index) => {
     },
   };
 };
+
 
 // Motion สำหรับหัวข้อและคำอธิบาย
 const fadeUpHeading = {
@@ -53,7 +54,7 @@ const AnimatedItemGroup = ({ data, extractItems }) => (
     whileInView="visible"
     viewport={{ once: true, amount: 0.2 }}
     variants={fadeUpItemGroup}  // ใช้ fadeUp animation ที่นี่
-    className="flex flex-wrap items-center justify-center gap-1 p-2"
+    className="flex flex-wrap items-center justify-center gap-1 pt-2"
   >
     {data.map((item, index) => (
       <motion.div
