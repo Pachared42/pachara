@@ -45,7 +45,7 @@ const Hero = () => {
       variants={textVariants(0)}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
-      className="mb-4 p-2 text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
+      className="mb-4 p-2 text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-tight"
     >
       {HERO.name}
     </motion.h2>
