@@ -57,7 +57,7 @@ const Education = () => {
                 </motion.p>
 
                 <div className="relative">
-                    <div className="flex flex-col gap-10 px-4 sm:gap-14 sm:px-0 sm:pl-10">
+                    <div className="flex flex-col gap-10 px-2 sm:gap-14 sm:px-0 sm:pl-10">
                         {EDUCATION.map((edu, index) => (
                             <motion.div
                                 key={index}
