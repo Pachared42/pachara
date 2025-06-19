@@ -3,6 +3,7 @@ import logo from "/LogoPachara2.png";
 import { NAVIGATION_LINKS } from "../constants";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -78,21 +79,29 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-          {isMobileMenuOpen && (
-            <ul className="ml-8 mt-4 mb-4 flex flex-col gap-4 backdrop-blur-md">
-              {NAVIGATION_LINKS.map((item, index) => (
-                <li key={index}>
-                  <a
-                    href={item.href}
-                    className="block w-full text-lg"
-                    onClick={(e) => handleLinkClick(e, item.href)}
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          )}
+          <AnimatePresence>
+            {isMobileMenuOpen && (
+              <motion.ul
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                className="mx-5 mt-4 mb-4 flex flex-col gap-4 backdrop-blur-md bg-black/20 rounded-md p-4"
+              >
+                {NAVIGATION_LINKS.map((item, index) => (
+                  <li key={index}>
+                    <a
+                      href={item.href}
+                      className="block w-full text-white text-lg hover:text-purple-400 transition-colors"
+                      onClick={(e) => handleLinkClick(e, item.href)}
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </motion.ul>
+            )}
+          </AnimatePresence>
         </div>
       </nav>
     </div>
