@@ -84,7 +84,7 @@ const Hero = () => {
       </div>
 
       {/* Image Content */}
-      <div className="w-full md:w-1/2  md:mt-0 flex justify-center md:justify-end">
+      <div className="w-full md:w-1/2 mt-10 md:mt-0 flex justify-center md:justify-end">
         <motion.img
           variants={imageVariants}
           initial="hidden"
