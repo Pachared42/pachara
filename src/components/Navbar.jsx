@@ -85,8 +85,8 @@ const Navbar = () => {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="mx-5 mt-4 mb-4 flex flex-col gap-4 backdrop-blur-md bg-black/20 rounded-md p-4"
+                transition={{ duration: 0.2, ease: "easeInOut" }}
+                className="mx-4 mb-4 flex flex-col gap-4 backdrop-blur-md rounded-md p-4"
               >
                 {NAVIGATION_LINKS.map((item, index) => (
                   <li key={index}>

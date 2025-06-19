@@ -34,14 +34,14 @@ const fadeUpSubText = {
 
 const Contact = () => {
     return (
-        <section className="min-h-screen px-4 sm:px-6 py-16 sm:py-20 bg-transparent" id="contact">
+        <section className="sm:px-6 py-20 sm:py-20 bg-transparent" id="contact">
             <div className="max-w-xl mx-auto text-center">
                 <motion.h1
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
                     variants={fadeUpHeading}
-                    className="mb-2 text-center text-3xl sm:text-4xl lg:text-6xl font-bold"
+                    className="mb-1 text-center text-3xl sm:text-4xl lg:text-6xl font-bold"
                 >
                     CONTACT ME
                 </motion.h1>
@@ -62,9 +62,9 @@ const Contact = () => {
                     viewport={{ once: true }}
                     variants={fadeUp}
                     custom={1}
-                    className="text-sm sm:text-base text-gray-400 mb-8 px-2 sm:px-0 leading-relaxed"
+                    className="text-sm sm:text-base text-gray-400 mb-16 sm:px-0 leading-relaxed"
                 >
-                    สนใจร่วมงานหรืออยากพูดคุยเพิ่มเติม
+                    สนใจร่วมงานหรืออยากพูดคุยเพิ่มเติม สามารถติดต่อผ่านช่องทางโซเชียลมีเดียด้านล่างได้เลยครับ
                 </motion.p>
 
                 <motion.div
@@ -73,7 +73,7 @@ const Contact = () => {
                     viewport={{ once: true }}
                     variants={fadeUp}
                     custom={2}
-                    className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-10"
+                    className="flex flex-wrap justify-center gap-4 sm:gap-6"
                 >
                     {SOCIAL_MEDIA_LINKS.map((link, index) => (
                         <a
@@ -86,17 +86,6 @@ const Contact = () => {
                             {link.icon}
                         </a>
                     ))}
-                </motion.div>
-
-                <motion.div
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    variants={fadeUp}
-                    custom={3}
-                    className="text-xs sm:text-sm text-gray-500"
-                >
-                    &copy; {new Date().getFullYear()} เขียนด้วย React และความหลงใหล 💜
                 </motion.div>
             </div>
         </section>

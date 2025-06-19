@@ -1,9 +1,6 @@
 import {
-  FaXTwitter,
   FaGithub,
-  FaLinkedin,
   FaFacebook,
-  FaDiscord,
   FaInstagram,
 } from "react-icons/fa6";
 
@@ -39,9 +36,9 @@ export const NAVIGATION_LINKS = [
   { label: "ผลงาน", href: "#projects" },
   { label: "ประวัติ", href: "#about" },
   { label: "ทักษะ", href: "#skills" },
-  { label: "ประสบการณ์", href: "#experience" },
   { label: "การศึกษา", href: "#education" },
   { label: "ติดต่อ", href: "#contact" },
+  {/* { label: "ประสบการณ์", href: "#experience" }, */},
 ];
 
 export const HERO = {
@@ -205,38 +202,39 @@ export const EXPERIENCES = [
 
 export const EDUCATION = [
   {
-    degree: "Master of Science in Computer Science",
-    institution: "Stanford University",
+    degree: "มัธยมศึกษาตอนปลาย สายทั่วไป",
+    institution: "THAMMACHOTESUKSALAI SCHOOL",
     duration: "September 2012 - June 2014",
     description:
-      "Specialized in Human-Computer Interaction and Software Engineering. Completed a thesis on enhancing user experience in web applications through advanced interactive techniques. Participated in various projects involving frontend development, algorithms, and data structures. Graduated with honors.",
+      "เรียนสายทั่วไป โดยมีความสนใจด้านการออกแบบกราฟิกและเริ่มต้นฝึกฝนพื้นฐานด้านการออกแบบตั้งแต่ช่วงมัธยม",
   },
   {
-    degree: "Bachelor of Science in Information Technology",
-    institution: "University of California, Berkeley",
-    duration: "September 2008 - June 2012",
+    degree: "ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) สาขาคอมพิวเตอร์กราฟิก",
+    institution: "Saraburi Vocational College",
+    duration: "May 2561 - May 2563",
     description:
-      "Focused on web development, programming languages, and database management. Actively involved in coding clubs and hackathons, where I developed several web applications using HTML, CSS, JavaScript, and PHP. Completed a senior project on developing an e-commerce platform. Graduated with a high GPA.",
+      "ศึกษาเกี่ยวกับการออกแบบกราฟิกด้วยโปรแกรมคอมพิวเตอร์ ฝึกปฏิบัติจริงทั้งด้านการออกแบบสื่อสิ่งพิมพ์ ดิจิทัลอาร์ต และพื้นฐานการใช้เครื่องมือกราฟิกอย่างมืออาชีพ เพื่อเตรียมความพร้อมสู่สายงานสร้างสรรค์",
+  },
+  {
+    degree: "ปริญญาตรี สาขาเทคโนโลยีสารสนเทศและเศรษฐกิจดิจิทัล",
+    institution: "Rajamangala University of Technology Suvarnabhumi, Suphanburi Campus",
+    duration: "July 2567 - Present",
+    description:
+      "ศึกษาเกี่ยวกับการพัฒนาเทคโนโลยีสารสนเทศ โดยเน้นด้านการออกแบบและพัฒนาระบบฐานข้อมูล แอปพลิเคชันบนอุปกรณ์พกพา และเว็บแอปพลิเคชัน ได้ฝึกปฏิบัติงานจริงในด้าน Full-stack Development ตั้งแต่การวางโครงสร้างฐานข้อมูล ไปจนถึงการเขียนโปรแกรมและออกแบบส่วนติดต่อผู้ใช้",
   },
 ];
 
 export const SOCIAL_MEDIA_LINKS = [
   {
-    href: "https://x.com/",
-    icon: <FaFacebook fontSize={25} className="hover:opacity-80" />,
+    href: "https://www.facebook.com/pacharaaaaaaa",
+    icon: <FaFacebook fontSize={50} className="hover:opacity-80" />,
   },
   {
-    href: "https://x.com/",
-    icon: <FaInstagram fontSize={25} className="hover:opacity-80" />,
+    href: "https://www.instagram.com/axm.pcr/",
+    icon: <FaInstagram fontSize={50} className="hover:opacity-80" />,
   },
   {
-    href: "https://github.com/",
-    icon: <FaGithub fontSize={25} className="hover:opacity-80" />,
+    href: "https://github.com/Pachared42",
+    icon: <FaGithub fontSize={50} className="hover:opacity-80" />,
   },
 ];
-
-<h1>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore
-  deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis.
-  Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.
-</h1>;

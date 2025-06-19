@@ -34,14 +34,14 @@ const fadeUpSubText = {
 
 const Experience = () => {
     return (
-        <section className="min-h-screen px-4 sm:px-6 py-16 sm:py-20" id="experience">
+        <section className="sm:px-6 pt-20 sm:py-20" id="experience">
             <div className="max-w-3xl sm:max-w-4xl mx-auto">
                 <motion.h1
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
                     variants={fadeUpHeading}
-                    className="mb-2 text-center text-3xl sm:text-4xl lg:text-6xl font-bold"
+                    className="mb-1 text-center text-3xl sm:text-4xl lg:text-6xl font-bold"
                 >
                     EXPERIENCES
                 </motion.h1>
@@ -68,7 +68,7 @@ const Experience = () => {
                                 variants={cardVariants}
                                 className="relative"
                             >
-                                <div className="flex flex-col gap-1 p-4 sm:p-5 rounded-md">
+                                <div className="flex flex-col gap-1 sm:p-5 rounded-md">
                                     <h3 className="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400 tracking-tight">
                                         {exp.title}
                                     </h3>

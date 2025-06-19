@@ -86,7 +86,7 @@ const Skills = () => {
 
       {/* SKILLS Section */}
       <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
-        <motion.h1 variants={fadeUpHeading} className="mb-1 text-center text-4xl lg:text-6xl font-bold">
+        <motion.h1 variants={fadeUpHeading} className="mb-1 text-center text-3xl sm:text-4xl lg:text-6xl font-bold">
           SKILL
         </motion.h1>
         <motion.p
@@ -112,7 +112,7 @@ const Skills = () => {
       <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
         <motion.h1
           variants={fadeUpHeading}
-          className="pt-20 mb-1 text-center text-4xl lg:text-6xl font-bold"
+          className="pt-20 mb-1 text-center text-3xl sm:text-4xl lg:text-6xl font-bold"
         >
           TOOL
         </motion.h1>
@@ -132,7 +132,7 @@ const Skills = () => {
       <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
         <motion.h1
           variants={fadeUpHeading}
-          className="pt-20 mb-1 text-center text-4xl lg:text-6xl font-bold"
+          className="pt-20 mb-1 text-center text-3xl sm:text-4xl lg:text-6xl font-bold"
         >
           DATABASE
         </motion.h1>

@@ -7,6 +7,7 @@ import StarsCanvas from './components/main/StarsBackground';
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -21,9 +22,11 @@ const App = () => {
         <Projects />
         <About />
         <Skills />
-        <Experience />
+        {/* <Experience /> */}
+        {/* ปิดการใช้งาน Experience ชั่วคราว */}
         <Education />
         <Contact />
+        <Footer />
       </div>
     </div>
   );

@@ -37,7 +37,7 @@ const Projects = () => {
       >
         <motion.h2
           variants={fadeUp}
-          className="mb-1 text-center text-4xl lg:text-6xl font-bold"
+          className="mb-1 text-center text-3xl sm:text-4xl lg:text-6xl font-bold"
         >
           PROJECT
         </motion.h2>

@@ -26,7 +26,7 @@ const About = () => {
       >
         <motion.h2
           variants={fadeUp}
-          className="mb-1 text-center text-4xl lg:text-6xl font-bold"
+          className="mb-1 text-center text-3xl sm:text-4xl lg:text-6xl font-bold"
         >
           ABOUT ME
         </motion.h2>
@@ -49,7 +49,7 @@ const About = () => {
           <motion.p
             key={index}
             variants={fadeUp}
-            className="mb-4 text-lg lg:text-xl text-center font-light"
+            className="mb-4 text-lg lg:text-xl font-light"
           >
             {About}
           </motion.p>
