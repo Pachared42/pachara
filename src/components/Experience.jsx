@@ -57,7 +57,7 @@ const Experience = () => {
                 </motion.p>
 
                 <div className="relative">
-                    <div className="flex flex-col gap-10 px-2 sm:gap-14 sm:px-0 sm:pl-10">
+                    <div className="flex flex-col gap-10 px-0 sm:gap-14 sm:px-0 sm:pl-10">
                         {EXPERIENCES.map((exp, index) => (
                             <motion.div
                                 key={index}
