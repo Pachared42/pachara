@@ -7,12 +7,13 @@ import {
   FaInstagram,
 } from "react-icons/fa6";
 
-import projectImage1 from "/project1.jpg";
+import PORTFOLIO from "/image/projectImage/PORTFOLIO.png";
 import projectImage2 from "/project2.jpg";
 import projectImage3 from "/project3.jpg";
 import projectImage4 from "/project4.jpg";
 import projectImage5 from "/project5.jpg";
 import projectImage6 from "/project6.jpg";
+
 
 // Skills icons
 import { RiReactjsLine } from "react-icons/ri";
@@ -58,8 +59,8 @@ export const PROJECTS = [
     id: 1,
     name: "Personal Portfolio",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis. Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.",
-    image: projectImage1,
+      "เว็บไซต์พอร์ตโฟลิโอส่วนตัวที่ออกแบบให้ดูทันสมัยและใช้งานได้กับทุกอุปกรณ์ แสดงผลงาน ความสามารถ และประสบการณ์ของฉัน พร้อม UI ที่เรียบหรูและแอนิเมชันที่ลื่นไหล",
+    image: PORTFOLIO,
     githubLink: "https://github.com/Pachared42/pachara",
   },
   {
@@ -181,24 +182,24 @@ export const DATABASES = [
 export const EXPERIENCES = [
   {
     title: "Lead Frontend Developer",
-    company: "Innovative Tech Solutions",
-    duration: "July 2020 - Present",
+    company: "[ บริษัท อินโนเวทีฟ เทค โซลูชั่นส์ ]",
+    duration: "กรกฎาคม 2020 - ปัจจุบัน",
     description:
-      "As the Lead Frontend Developer, I spearheaded the development of advanced web applications using cutting-edge technologies like React, Redux, and TypeScript. I worked closely with cross-functional teams, including designers, product managers, and backend developers, to deliver seamless and high-performance user experiences.",
+      "ในฐานะหัวหน้าทีม Frontend ฉันเป็นผู้นำในการพัฒนาเว็บแอปพลิเคชันโดยใช้เทคโนโลยีสมัยใหม่ เช่น React, Redux และ TypeScript พร้อมทำงานร่วมกับทีมดีไซน์ ผู้จัดการผลิตภัณฑ์ และทีม Backend เพื่อส่งมอบประสบการณ์ผู้ใช้ที่ลื่นไหลและมีประสิทธิภาพสูง",
   },
   {
     title: "Frontend Engineer",
-    company: "Digital Creations",
-    duration: "February 2016 - June 2020",
+    company: "[ บริษัท ดิจิทัล ครีเอชั่นส์ ]",
+    duration: "กุมภาพันธ์ 2016 - มิถุนายน 2020",
     description:
-      "At Digital Creations, I focused on building highly interactive and responsive web interfaces using HTML, CSS, JavaScript, and modern libraries like React. I collaborated closely with UX/UI designers to implement design changes that enhanced user engagement and satisfaction. My role involved optimizing website performance, ensuring cross-browser compatibility, and implementing SEO best practices. ",
+      "ฉันรับผิดชอบในการพัฒนาอินเทอร์เฟซเว็บที่ตอบสนองและโต้ตอบได้สูง โดยใช้ HTML, CSS, JavaScript และ React พร้อมร่วมมือกับ UX/UI Designer ในการปรับปรุงการออกแบบเพื่อเพิ่มประสบการณ์การใช้งานของผู้ใช้ รวมถึงการเพิ่มประสิทธิภาพเว็บไซต์ให้รองรับทุกเบราว์เซอร์ และเป็นมิตรกับ SEO",
   },
   {
     title: "Junior Web Developer",
-    company: "Bright Future Technologies",
-    duration: "August 2014 - January 2016",
+    company: "[ บริษัท ไบร์ท ฟิวเจอร์ เทคโนโลยีส์ ]",
+    duration: "สิงหาคม 2014 - มกราคม 2016",
     description:
-      "In my role as a Junior Web Developer, I assisted in the development and maintenance of various web applications. I gained hands-on experience in utilizing HTML, CSS, and JavaScript to create user-friendly interfaces. I actively participated in team meetings, contributed to project planning, and collaborated with senior developers to implement new features.",
+      "ฉันมีส่วนร่วมในการพัฒนาและดูแลระบบเว็บแอปของบริษัท โดยใช้ HTML, CSS และ JavaScript เพื่อสร้างอินเทอร์เฟซที่ใช้งานง่าย รวมถึงมีส่วนร่วมในการวางแผนโปรเจกต์ และเรียนรู้จากนักพัฒนาอาวุโสเพื่อพัฒนาทักษะอย่างต่อเนื่อง",
   },
 ];
 
