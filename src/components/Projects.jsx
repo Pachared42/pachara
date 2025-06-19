@@ -1,65 +1,54 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 
-const container = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: {
+// ใช้ fadeUpCustom สำหรับกำหนด delay แบบ manual ตาม custom index
+const fadeUpCustom = {
+  hidden: (i) => ({ opacity: 0, y: 30 }),
+  visible: (i) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
-  },
-};
-
-const cardVariant = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+    transition: { duration: 0.6, ease: "easeOut", delay: i * 0.1 },
+  }),
 };
 
 const Projects = () => {
   return (
     <section className="pt-20" id="projects">
-      {/* ห่อหัวข้อกับ motion div */}
-      <motion.div
-        variants={container}
+      {/* HEADINGS */}
+      <motion.h2
+        custom={0}
+        variants={fadeUpCustom}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        className="mb-10"
+        className="mb-1 text-center text-3xl sm:text-4xl lg:text-6xl font-bold"
       >
-        <motion.h2
-          variants={fadeUp}
-          className="mb-1 text-center text-3xl sm:text-4xl lg:text-6xl font-bold"
-        >
-          PROJECT
-        </motion.h2>
-        <motion.p
-          variants={fadeUp}
-          className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400 text-[1.2rem]"
-        >
-          ดูรายละเอียดเพิ่มเติม
-        </motion.p>
-      </motion.div>
+        PROJECT
+      </motion.h2>
 
+      <motion.p
+        custom={1}
+        variants={fadeUpCustom}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-[#ef233c] to-[#f9bec7] text-[1.2rem]"
+      >
+        ดูรายละเอียดเพิ่มเติม
+      </motion.p>
+
+      {/* PROJECT CARDS */}
       <motion.div
-        variants={container}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
       >
-        {PROJECTS.map((project) => (
+        {PROJECTS.map((project, index) => (
           <motion.div
             key={project.id}
-            variants={cardVariant}
+            custom={index + 2} // ไล่ต่อจาก h2 (0) และ p (1)
+            variants={fadeUpCustom}
             className="group relative overflow-hidden rounded-3xl shadow-xl transition-transform duration-500 ease-out hover:scale-105"
           >
             <img
@@ -72,6 +61,16 @@ const Projects = () => {
               <p className="font-light mb-8 px-4 text-center text-sm text-balance">
                 {project.description}
               </p>
+              <div className="mb-6 flex flex-wrap justify-center gap-3 sm:gap-4 text-3xl sm:text-4xl lg:text-5xl">
+                {project.stackIcons?.map((Icon, index) => (
+                  <span
+                    key={index}
+                    className="transition-transform hover:scale-110"
+                  >
+                    {Icon}
+                  </span>
+                ))}
+              </div>
               <a
                 href={project.githubLink}
                 target="_blank"

@@ -5,18 +5,23 @@ import {
 } from "react-icons/fa6";
 
 import PORTFOLIO from "/image/projectImage/PORTFOLIO.png";
-import projectImage2 from "/project2.jpg";
+import ECOMMERCE from "/image/projectImage/E-Commerce Platform.png";
 import projectImage3 from "/project3.jpg";
 import projectImage4 from "/project4.jpg";
 import projectImage5 from "/project5.jpg";
 import projectImage6 from "/project6.jpg";
+
+// Skills icons Projects
+import { SiReact, SiTailwindcss, SiFramer } from "react-icons/si";
+import { SiHtml5, SiCss3, SiJavascript, } from "react-icons/si";
+import { SiFlutter } from "react-icons/si";
+import { SiOracle } from "react-icons/si";
 
 
 // Skills icons
 import { RiReactjsLine } from "react-icons/ri";
 import { SiPhp } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { DiJavascript } from "react-icons/di";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 
@@ -27,6 +32,7 @@ import { SiXampp } from "react-icons/si";
 import { SiLaragon } from "react-icons/si";
 import { SiAdobeillustrator } from "react-icons/si";
 import { SiAdobephotoshop } from "react-icons/si";
+import { SiWarp } from "react-icons/si";
 
 // Database icons
 import { SiMysql } from "react-icons/si";
@@ -38,7 +44,7 @@ export const NAVIGATION_LINKS = [
   { label: "ทักษะ", href: "#skills" },
   { label: "การศึกษา", href: "#education" },
   { label: "ติดต่อ", href: "#contact" },
-  {/* { label: "ประสบการณ์", href: "#experience" }, */},
+  {/* { label: "ประสบการณ์", href: "#experience" }, */ },
 ];
 
 export const HERO = {
@@ -59,30 +65,50 @@ export const PROJECTS = [
       "เว็บไซต์พอร์ตโฟลิโอส่วนตัวที่ออกแบบให้ดูทันสมัยและใช้งานได้กับทุกอุปกรณ์ แสดงผลงาน ความสามารถ และประสบการณ์ของฉัน พร้อม UI ที่เรียบหรูและแอนิเมชันที่ลื่นไหล",
     image: PORTFOLIO,
     githubLink: "https://github.com/Pachared42/pachara",
+    stackIcons: [
+      <SiReact key="react" className="text-[#61DAFB]" />,
+      <SiTailwindcss key="tailwind" className="text-[#38BDF8]" />,
+      <SiFramer key="framer" className="text-[#0055FF]" />,
+    ]
   },
   {
     id: 2,
     name: "E-Commerce Platform",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis. Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.",
-    image: projectImage2,
+      "เว็บไซต์ร้านขายคีย์บอร์ดเกมมิ่งที่ออกแบบมาเพื่อให้ผู้ใช้งานสามารถเลือกซื้อสินค้าได้อย่างสะดวก พร้อมระบบค้นหา เปรียบเทียบรุ่น และดูรายละเอียดสินค้าแบบครบถ้วน รองรับการแสดงผลทั้งบนมือถือและเดสก์ท็อป",
+    image: ECOMMERCE,
     githubLink: "https://github.com/user/ecommerce-platform",
+    stackIcons: [
+      <SiHtml5 key="html" className="text-[#e34f26]" />,
+      <SiCss3 key="css" className="text-[#1572B6]" />,
+      <SiJavascript key="js" className="text-[#f7df1e]" />,
+      <SiPhp key="php" className="text-[#8892be]" />,
+      <SiOracle key="oracle" className="text-[#F80000]" />,
+    ]
   },
   {
     id: 3,
-    name: "Task Management Tool",
+    name: "Weather App",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis. Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.",
     image: projectImage3,
     githubLink: "https://github.com/user/task-management-tool",
+    stackIcons: [
+      <SiFlutter key="flutter" className="text-[#02569B]" />
+    ]
   },
   {
     id: 4,
-    name: "Weather App",
+    name: "Task Management Tool",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis. Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.",
     image: projectImage4,
     githubLink: "https://github.com/user/weather-app",
+    stackIcons: [
+      <SiReact key="react" className="text-[#61DAFB]" />,
+      <SiTailwindcss key="tailwind" className="text-[#38BDF8]" />,
+      <SiFramer key="framer" className="text-[#0055FF]" />,
+    ]
   },
   {
     id: 5,
@@ -91,6 +117,11 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis. Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.",
     image: projectImage5,
     githubLink: "https://github.com/user/blog-platform",
+    stackIcons: [
+      <SiReact key="react" className="text-[#61DAFB]" />,
+      <SiTailwindcss key="tailwind" className="text-[#38BDF8]" />,
+      <SiFramer key="framer" className="text-[#0055FF]" />,
+    ]
   },
   {
     id: 6,
@@ -99,6 +130,11 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis. Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.",
     image: projectImage6,
     githubLink: "https://github.com/user/chat-application",
+    stackIcons: [
+      <SiReact key="react" className="text-[#61DAFB]" />,
+      <SiTailwindcss key="tailwind" className="text-[#38BDF8]" />,
+      <SiFramer key="framer" className="text-[#0055FF]" />,
+    ]
   },
 ];
 
@@ -134,7 +170,7 @@ export const SKILLS = [
     experience: "",
   },
   {
-    skill6: <DiJavascript className="text-3xl sm:text-5xl md:text-[75px] lg:text-[90px] xl:text-[105px] text-[#F7DF1E]" />,
+    skill6: <SiJavascript className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#F7DF1E]" />,
     name: "JavaScript",
     experience: "",
   },
@@ -166,12 +202,22 @@ export const TOOLS = [
     name: "Adobe Photoshop",
     experience: "",
   },
+  {
+    tool6: <SiWarp className="text-3xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FFFFFF]" />,
+    name: "Warp",
+    experience: "",
+  },
 ];
 
 export const DATABASES = [
   {
     database1: <SiMysql className="text-3xl sm:text-5xl md:text-[80px] lg:text-[100px] xl:text-[115px] text-[#4479A1]" />,
     name: "MySQL",
+    experience: "",
+  },
+  {
+    database2: <SiOracle className="text-3xl sm:text-5xl md:text-[80px] lg:text-[100px] xl:text-[115px] text-[#F80000]" />,
+    name: "Oracle",
     experience: "",
   },
 ];
@@ -203,21 +249,21 @@ export const EXPERIENCES = [
 export const EDUCATION = [
   {
     degree: "มัธยมศึกษาตอนปลาย สายทั่วไป",
-    institution: "THAMMACHOTESUKSALAI SCHOOL",
+    institution: "[ THAMMACHOTESUKSALAI SCHOOL ]",
     duration: "September 2012 - June 2014",
     description:
       "เรียนสายทั่วไป โดยมีความสนใจด้านการออกแบบกราฟิกและเริ่มต้นฝึกฝนพื้นฐานด้านการออกแบบตั้งแต่ช่วงมัธยม",
   },
   {
-    degree: "ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) สาขาคอมพิวเตอร์กราฟิก",
-    institution: "Saraburi Vocational College",
+    degree: "ประกาศนียบัตรวิชาชีพชั้นสูง สาขาคอมพิวเตอร์กราฟิก",
+    institution: "[ Saraburi Vocational College ]",
     duration: "May 2561 - May 2563",
     description:
       "ศึกษาเกี่ยวกับการออกแบบกราฟิกด้วยโปรแกรมคอมพิวเตอร์ ฝึกปฏิบัติจริงทั้งด้านการออกแบบสื่อสิ่งพิมพ์ ดิจิทัลอาร์ต และพื้นฐานการใช้เครื่องมือกราฟิกอย่างมืออาชีพ เพื่อเตรียมความพร้อมสู่สายงานสร้างสรรค์",
   },
   {
     degree: "ปริญญาตรี สาขาเทคโนโลยีสารสนเทศและเศรษฐกิจดิจิทัล",
-    institution: "Rajamangala University of Technology Suvarnabhumi, Suphanburi Campus",
+    institution: "[ Rajamangala University of Technology Suvarnabhumi, Suphanburi Campus ]",
     duration: "July 2567 - Present",
     description:
       "ศึกษาเกี่ยวกับการพัฒนาเทคโนโลยีสารสนเทศ โดยเน้นด้านการออกแบบและพัฒนาระบบฐานข้อมูล แอปพลิเคชันบนอุปกรณ์พกพา และเว็บแอปพลิเคชัน ได้ฝึกปฏิบัติงานจริงในด้าน Full-stack Development ตั้งแต่การวางโครงสร้างฐานข้อมูล ไปจนถึงการเขียนโปรแกรมและออกแบบส่วนติดต่อผู้ใช้",

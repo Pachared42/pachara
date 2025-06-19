@@ -46,7 +46,7 @@ const Navbar = () => {
                 {NAVIGATION_LINKS.map((item, index) => (
                   <li key={index}>
                     <a
-                      className="text-white hover:text-transparent hover:bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 bg-clip-text"
+                      className="text-white hover:text-transparent hover:bg-gradient-to-r from-[#ef233c] to-[#f9bec7] bg-clip-text"
                       href={item.href}
                       onClick={(e) => handleLinkClick(e, item.href)}
                     >
@@ -92,7 +92,7 @@ const Navbar = () => {
                   <li key={index}>
                     <a
                       href={item.href}
-                      className="block w-full text-white text-lg hover:text-purple-400 transition-colors"
+                      className="block w-full text-[#ef233c] text-lg hover:text-purple-400 transition-colors"
                       onClick={(e) => handleLinkClick(e, item.href)}
                     >
                       {item.label}
