@@ -250,7 +250,7 @@ export const EDUCATION = [
   {
     degree: "มัธยมศึกษาตอนปลาย สายทั่วไป",
     institution: "[ THAMMACHOTESUKSALAI SCHOOL ]",
-    duration: "September 2012 - June 2014",
+    duration: "May 2558 - May 2561",
     description:
       "เรียนสายทั่วไป โดยมีความสนใจด้านการออกแบบกราฟิกและเริ่มต้นฝึกฝนพื้นฐานด้านการออกแบบตั้งแต่ช่วงมัธยม",
   },
