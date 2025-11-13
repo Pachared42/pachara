@@ -1,8 +1,4 @@
-import {
-  FaGithub,
-  FaFacebook,
-  FaInstagram,
-} from "react-icons/fa6";
+import { FaGithub, FaFacebook, FaInstagram } from "react-icons/fa6";
 
 import PORTFOLIO from "/image/projectImage/PORTFOLIO.png";
 import ECOMMERCE from "/image/projectImage/E-Commerce Platform.png";
@@ -13,10 +9,9 @@ import projectImage6 from "/project6.jpg";
 
 // Skills icons Projects
 import { SiReact, SiTailwindcss, SiFramer } from "react-icons/si";
-import { SiHtml5, SiCss3, SiJavascript, } from "react-icons/si";
+import { SiHtml5, SiCss3, SiJavascript } from "react-icons/si";
 import { SiFlutter } from "react-icons/si";
 import { SiOracle } from "react-icons/si";
-
 
 // Skills icons
 import { RiReactjsLine } from "react-icons/ri";
@@ -33,10 +28,13 @@ import { SiLaragon } from "react-icons/si";
 import { SiAdobeillustrator } from "react-icons/si";
 import { SiAdobephotoshop } from "react-icons/si";
 import { SiWarp } from "react-icons/si";
+import { FaGolang } from "react-icons/fa6";
+import { SiMui } from "react-icons/si";
+import { SiRailway } from "react-icons/si";
+import { SiVercel } from "react-icons/si";
 
 // Database icons
 import { SiMysql } from "react-icons/si";
-
 
 export const NAVIGATION_LINKS = [
   { label: "ผลงาน", href: "#projects" },
@@ -44,7 +42,9 @@ export const NAVIGATION_LINKS = [
   { label: "ทักษะ", href: "#skills" },
   { label: "การศึกษา", href: "#education" },
   { label: "ติดต่อ", href: "#contact" },
-  {/* { label: "ประสบการณ์", href: "#experience" }, */ },
+  {
+    /* { label: "ประสบการณ์", href: "#experience" }, */
+  },
 ];
 
 export const HERO = {
@@ -69,7 +69,7 @@ export const PROJECTS = [
       <SiReact key="react" className="text-[#61DAFB]" />,
       <SiTailwindcss key="tailwind" className="text-[#38BDF8]" />,
       <SiFramer key="framer" className="text-[#0055FF]" />,
-    ]
+    ],
   },
   {
     id: 2,
@@ -84,7 +84,7 @@ export const PROJECTS = [
       <SiJavascript key="js" className="text-[#f7df1e]" />,
       <SiPhp key="php" className="text-[#8892be]" />,
       <SiOracle key="oracle" className="text-[#F80000]" />,
-    ]
+    ],
   },
   {
     id: 3,
@@ -93,9 +93,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis. Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.",
     image: projectImage3,
     githubLink: "https://github.com/user/task-management-tool",
-    stackIcons: [
-      <SiFlutter key="flutter" className="text-[#02569B]" />
-    ]
+    stackIcons: [<SiFlutter key="flutter" className="text-[#02569B]" />],
   },
   {
     id: 4,
@@ -108,7 +106,7 @@ export const PROJECTS = [
       <SiReact key="react" className="text-[#61DAFB]" />,
       <SiTailwindcss key="tailwind" className="text-[#38BDF8]" />,
       <SiFramer key="framer" className="text-[#0055FF]" />,
-    ]
+    ],
   },
   {
     id: 5,
@@ -121,7 +119,7 @@ export const PROJECTS = [
       <SiReact key="react" className="text-[#61DAFB]" />,
       <SiTailwindcss key="tailwind" className="text-[#38BDF8]" />,
       <SiFramer key="framer" className="text-[#0055FF]" />,
-    ]
+    ],
   },
   {
     id: 6,
@@ -134,90 +132,139 @@ export const PROJECTS = [
       <SiReact key="react" className="text-[#61DAFB]" />,
       <SiTailwindcss key="tailwind" className="text-[#38BDF8]" />,
       <SiFramer key="framer" className="text-[#0055FF]" />,
-    ]
+    ],
   },
 ];
 
 export const ABOUT = [
   "ผมเป็นนักศึกษาระดับปริญญาตรี จากมหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ ศูนย์สุพรรณบุรี มีความหลงใหลในการออกแบบและพัฒนาเว็บไซต์ โดยเฉพาะในสายงาน Front-End Developer พร้อมให้ความสำคัญกับการสร้างสรรค์ผลงานที่สวยงามและตอบโจทย์ผู้ใช้งานอยู่เสมอ",
-  "ด้วยความมุ่งมั่นในการเรียนรู้และพัฒนาทักษะอย่างต่อเนื่อง ผมตั้งเป้าหมายในการเติบโตสู่การเป็น Software Engineer โดยเน้นการออกแบบซอฟต์แวร์ที่มีคุณภาพ และประสบการณ์ผู้ใช้ที่ดีเยี่ยมควบคู่กันไป"
+  "ด้วยความมุ่งมั่นในการเรียนรู้และพัฒนาทักษะอย่างต่อเนื่อง ผมตั้งเป้าหมายในการเติบโตสู่การเป็น Software Engineer โดยเน้นการออกแบบซอฟต์แวร์ที่มีคุณภาพ และประสบการณ์ผู้ใช้ที่ดีเยี่ยมควบคู่กันไป",
 ];
 
 export const SKILLS = [
   {
-    skill1: <RiReactjsLine className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#61DAFB]" />,
+    skill1: (
+      <RiReactjsLine className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#61DAFB]" />
+    ),
     name: "React",
     experience: "",
   },
   {
-    skill2: <SiPhp className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#8892BF]" />,
+    skill2: (
+      <SiPhp className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#8892BF]" />
+    ),
     name: "PHP",
     experience: "",
   },
   {
-    skill3: <RiTailwindCssFill className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#38BDF8]" />,
+    skill3: (
+      <RiTailwindCssFill className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#38BDF8]" />
+    ),
     name: "Tailwind CSS",
     experience: "",
   },
   {
-    skill4: <FaHtml5 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#E34F26]" />,
+    skill4: (
+      <FaHtml5 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#E34F26]" />
+    ),
     name: "HTML",
     experience: "",
   },
   {
-    skill5: <FaCss3Alt className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#264DE4]" />,
+    skill5: (
+      <FaCss3Alt className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#264DE4]" />
+    ),
     name: "CSS",
     experience: "",
   },
   {
-    skill6: <SiJavascript className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#F7DF1E]" />,
+    skill6: (
+      <SiJavascript className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#F7DF1E]" />
+    ),
     name: "JavaScript",
+    experience: "",
+  },
+  {
+    skill7: (
+      <FaGolang className="text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-[#00ADD8]" />
+    ),
+    name: "GoLang",
+    experience: "",
+  },
+  {
+    skill8: (
+      <SiMui className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#007FFF]" />
+    ),
+    name: "MUI",
     experience: "",
   },
 ];
 
 export const TOOLS = [
   {
-    tool1: <VscVscodeInsiders className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#007ACC]" />,
+    tool1: (
+      <VscVscodeInsiders className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#007ACC]" />
+    ),
     name: "Visual Studio Code",
     experience: "",
   },
   {
-    tool2: <IoLogoGithub className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#586069]" />,
+    tool2: (
+      <IoLogoGithub className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#586069]" />
+    ),
     name: "GitHub",
     experience: "",
   },
   {
-    tool3: <SiXampp className="text-3xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FF7A00]" />,
+    tool3: (
+      <SiXampp className="text-3xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FF7A00]" />
+    ),
     name: "XAMPP",
     experience: "",
   },
   {
-    tool4: <SiAdobeillustrator className="text-3xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FF9A00]" />,
+    tool4: (
+      <SiAdobeillustrator className="text-3xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FF9A00]" />
+    ),
     name: "Adobe Illustrator",
     experience: "",
   },
   {
-    tool5: <SiAdobephotoshop className="text-3xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#31A8FF]" />,
+    tool5: (
+      <SiAdobephotoshop className="text-3xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#31A8FF]" />
+    ),
     name: "Adobe Photoshop",
     experience: "",
   },
+  // {
+  //   tool6: (
+  //     <SiWarp className="text-3xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FFFFFF]" />
+  //   ),
+  //   name: "Warp",
+  //   experience: "",
+  // },
   {
-    tool6: <SiWarp className="text-3xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FFFFFF]" />,
-    name: "Warp",
+    tool7: (
+      <SiVercel className="text-3xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FFFFFF]" />
+    ),
+    name: "Vercel",
+    experience: "",
+  },
+  {
+    tool8: (
+      <SiRailway className="text-3xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FFFFFF]" />
+    ),
+    name: "Railway",
     experience: "",
   },
 ];
 
 export const DATABASES = [
   {
-    database1: <SiMysql className="text-3xl sm:text-5xl md:text-[80px] lg:text-[100px] xl:text-[115px] text-[#4479A1]" />,
+    database1: (
+      <SiMysql className="text-3xl sm:text-5xl md:text-[80px] lg:text-[100px] xl:text-[115px] text-[#4479A1]" />
+    ),
     name: "MySQL",
-    experience: "",
-  },
-  {
-    database2: <SiOracle className="text-3xl sm:text-5xl md:text-[80px] lg:text-[100px] xl:text-[115px] text-[#F80000]" />,
-    name: "Oracle",
     experience: "",
   },
 ];
@@ -263,7 +310,8 @@ export const EDUCATION = [
   },
   {
     degree: "ปริญญาตรี สาขาเทคโนโลยีสารสนเทศและเศรษฐกิจดิจิทัล",
-    institution: "[ Rajamangala University of Technology Suvarnabhumi, Suphanburi Campus ]",
+    institution:
+      "[ Rajamangala University of Technology Suvarnabhumi, Suphanburi Campus ]",
     duration: "July 2567 - Present",
     description:
       "ศึกษาเกี่ยวกับการพัฒนาเทคโนโลยีสารสนเทศ โดยเน้นด้านการออกแบบและพัฒนาระบบฐานข้อมูล แอปพลิเคชันบนอุปกรณ์พกพา และเว็บแอปพลิเคชัน ได้ฝึกปฏิบัติงานจริงในด้าน Full-stack Development ตั้งแต่การวางโครงสร้างฐานข้อมูล ไปจนถึงการเขียนโปรแกรมและออกแบบส่วนติดต่อผู้ใช้",

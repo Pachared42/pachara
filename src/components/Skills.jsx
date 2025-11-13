@@ -1,12 +1,12 @@
+import { i } from "framer-motion/client";
 import { SKILLS } from "../constants";
 import { TOOLS } from "../constants";
 import { DATABASES } from "../constants";
 import { motion } from "framer-motion";
 
-// animation เด้งของไอเท็มแต่ละตัว (floating)
 const floatingVariants = (index) => {
-  const amplitude = 2 + index * 1; // ระยะเลื่อนขึ้นลง
-  const duration = 6 + index * 4;  // ความเร็ว
+  const amplitude = 2 + index * 1;
+  const duration = 6 + index * 4;
 
   return {
     initial: { y: -amplitude },
@@ -22,7 +22,6 @@ const floatingVariants = (index) => {
   };
 };
 
-// animation fade up พร้อม delay ควบคุมด้วย custom index
 const fadeUpCustom = {
   hidden: (i) => ({ opacity: 0, y: 30 }),
   visible: (i) => ({
@@ -32,9 +31,8 @@ const fadeUpCustom = {
   }),
 };
 
-// คอมโพเนนต์สำหรับแสดงไอเท็มพร้อม animation เด้งๆ
 const AnimatedItemGroup = ({ data, extractItems }) => (
-  <div className="flex flex-wrap items-center justify-center gap-1 pt-2">
+  <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
     {data.map((item, index) => (
       <motion.div
         key={index}
@@ -99,6 +97,8 @@ const Skills = () => {
             item.skill4,
             item.skill5,
             item.skill6,
+            item.skill7,
+            item.skill8,
           ]}
         />
       </motion.div>
@@ -140,6 +140,8 @@ const Skills = () => {
             item.tool4,
             item.tool5,
             item.tool6,
+            item.tool7,
+            item.tool8,
           ]}
         />
       </motion.div>
