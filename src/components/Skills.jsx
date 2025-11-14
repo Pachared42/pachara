@@ -32,7 +32,7 @@ const fadeUpCustom = {
 };
 
 const AnimatedItemGroup = ({ data, extractItems }) => (
-  <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+  <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
     {data.map((item, index) => (
       <motion.div
         key={index}
@@ -59,7 +59,6 @@ const AnimatedItemGroup = ({ data, extractItems }) => (
 const Skills = () => {
   return (
     <section className="flex max-w-4xl flex-col pt-20" id="skills">
-
       {/* SKILL */}
       <motion.h1
         custom={0}
@@ -99,6 +98,7 @@ const Skills = () => {
             item.skill6,
             item.skill7,
             item.skill8,
+            item.skill9,
           ]}
         />
       </motion.div>
@@ -142,6 +142,8 @@ const Skills = () => {
             item.tool6,
             item.tool7,
             item.tool8,
+            item.tool9,
+            item.tool10,
           ]}
         />
       </motion.div>
@@ -176,7 +178,13 @@ const Skills = () => {
       >
         <AnimatedItemGroup
           data={DATABASES}
-          extractItems={(item) => [item.database1, item.database2, item.database3, item.database4, item.database5]}
+          extractItems={(item) => [
+            item.database1,
+            item.database2,
+            item.database3,
+            item.database4,
+            item.database5,
+          ]}
         />
       </motion.div>
     </section>

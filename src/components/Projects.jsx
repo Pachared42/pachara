@@ -56,8 +56,10 @@ const Projects = () => {
               alt={project.name}
               className="h-100 w-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
             />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 backdrop-blur-md transition-all duration-500 ease-in-out group-hover:opacity-100 bg-gradient-to-t from-black via-transparent to-transparent">
-              <h3 className="mb-8 text-2xl font-semibold">{project.name}</h3>
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-amber opacity-0 backdrop-blur-3xl transition-all duration-500 ease-in-out group-hover:opacity-100 bg-gradient-to-t from-black via-transparent to-transparent">
+              <h3 className="mb-8 text-2xl font-semibold text-center break-words">
+                {project.name}
+              </h3>
               <p className="font-light mb-8 px-4 text-center text-sm text-balance">
                 {project.description}
               </p>

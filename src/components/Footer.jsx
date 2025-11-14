@@ -7,7 +7,7 @@ const fadeUp = {
 
 const Footer = () => {
     return (
-        <footer className="w-full backdrop-blur-md text-white px-4 py-6">
+        <footer className="w-full text-white px-4 py-6">
             <div className="max-w-7xl mx-auto flex flex-col items-center justify-center text-center">
                 <motion.p
                     variants={fadeUp}
