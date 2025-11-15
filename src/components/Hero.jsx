@@ -38,7 +38,7 @@ const Hero = () => {
           variants={fadeUpCustom}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="mb-4 p-2 text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-tight"
+          className="mb-4 p-2 text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight"
         >
           {HERO.name}
         </motion.h2>
@@ -48,7 +48,7 @@ const Hero = () => {
           variants={fadeUpCustom}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="block p-2 mb-6 text-lg sm:text-xl md:text-3xl font-semibold bg-gradient-to-r from-[#ef233c] to-[#f9bec7] bg-clip-text text-transparent"
+          className="block p-2 mb-6 text-lg sm:text-xl md:text-2xl font-semibold bg-gradient-to-r from-[#ef233c] to-[#f9bec7] bg-clip-text text-transparent"
         >
           {HERO.greet}
         </motion.span>
@@ -58,7 +58,7 @@ const Hero = () => {
           variants={fadeUpCustom}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="p-2 mb-8 text-base sm:text-lg md:text-xl max-w-md md:max-w-lg font-light leading-relaxed"
+          className="p-2 mb-8 text-xs sm:text-sm md:text-base max-w-md md:max-w-lg font-light leading-relaxed"
         >
           {HERO.description}
         </motion.p>

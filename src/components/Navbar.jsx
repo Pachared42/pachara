@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "/LogoPachara2.png";
+import logo from "/Pachara.png";
 import { NAVIGATION_LINKS } from "../constants";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
@@ -63,7 +63,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between mx-5">
             <div>
               <a href="/">
-                <p className="m-3">Pachara</p>
+                <img src={logo} width={100} alt="logo" />
               </a>
             </div>
             <div className="flex items-center">

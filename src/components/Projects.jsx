@@ -32,7 +32,7 @@ const Projects = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-[#ef233c] to-[#f9bec7] text-[1.2rem]"
+        className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-[#ef233c] to-[#f9bec7] text-base sm:text-lg"
       >
         ดูรายละเอียดเพิ่มเติม
       </motion.p>
@@ -47,7 +47,7 @@ const Projects = () => {
         {PROJECTS.map((project, index) => (
           <motion.div
             key={project.id}
-            custom={index + 2} // ไล่ต่อจาก h2 (0) และ p (1)
+            custom={index + 2}
             variants={fadeUpCustom}
             className="group relative overflow-hidden rounded-3xl shadow-xl transition-transform duration-500 ease-out hover:scale-105"
           >
@@ -57,10 +57,10 @@ const Projects = () => {
               className="h-100 w-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-amber opacity-0 backdrop-blur-3xl transition-all duration-500 ease-in-out group-hover:opacity-100 bg-gradient-to-t from-black via-transparent to-transparent">
-              <h3 className="mb-8 text-2xl font-semibold text-center break-words">
+              <h3 className="mb-8 text-xl font-semibold text-center break-words">
                 {project.name}
               </h3>
-              <p className="font-light mb-8 px-4 text-center text-sm text-balance">
+              <p className="font-light mb-8 px-4 text-center text-xs text-balance text-gray-300">
                 {project.description}
               </p>
               <div className="mb-6 flex flex-wrap justify-center gap-3 sm:gap-4 text-3xl sm:text-4xl lg:text-5xl">

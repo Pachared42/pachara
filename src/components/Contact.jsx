@@ -34,7 +34,7 @@ const Contact = () => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                    className="tracking-wider text-center text-transparent font-light pb-4 sm:pb-5 bg-clip-text bg-gradient-to-r from-[#ef233c] to-[#f9bec7] text-base sm:text-[1.2rem]"
+                    className="tracking-wider text-center text-transparent font-light pb-4 sm:pb-5 bg-clip-text bg-gradient-to-r from-[#ef233c] to-[#f9bec7] text-base sm:text-lg"
                 >
                     ดูรายละเอียดเพิ่มเติม
                 </motion.p>

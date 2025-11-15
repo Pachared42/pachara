@@ -105,7 +105,7 @@ export const PROJECTS = [
     description:
       "ระบบบริหารจัดการร้านค้าแบบครบวงจร พัฒนาขึ้นในโครงการภายในมหาวิทยาลัย โดยมีเป้าหมายเพื่อเพิ่มประสิทธิภาพการจัดเก็บข้อมูลสินค้า การขาย และการจัดการสต๊อกให้เป็นระบบมากขึ้น ผ่านเทคโนโลยีสมัยใหม่และโครงสร้างระบบที่ใช้งานง่าย",
     image: StoreManagementSystemSCI_NEXT,
-    githubLink: "https://github.com/user/weather-app",
+    githubLink: "https://github.com/",
     stackIcons: [
       <SiReact key="react" className="text-[#61DAFB]" />,
       <SiJavascript key="framer" className="text-[#f7df1e]" />,
