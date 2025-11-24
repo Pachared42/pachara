@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import StarsCanvas from './components/main/StarsBackground';
+import StarsCanvas from './style/StarsBackground';
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
