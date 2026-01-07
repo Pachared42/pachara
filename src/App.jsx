@@ -16,7 +16,7 @@ const App = () => {
       <StarsCanvas />
 
       {/* เนื้อหาเว็บ */}
-      <div className="relative z-10 flex flex-col items-center p-8  container mx-auto">
+      <div className="relative z-10 flex flex-col items-center p-8 container mx-auto">
         <Navbar />
         <Hero />
         <Projects />
