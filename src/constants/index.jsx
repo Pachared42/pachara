@@ -35,8 +35,6 @@ import { SiMamp } from "react-icons/si";
 import { SiAdobeillustrator } from "react-icons/si";
 import { SiAdobephotoshop } from "react-icons/si";
 import { SiWarp } from "react-icons/si";
-import { SiRailway } from "react-icons/si";
-import { SiVercel } from "react-icons/si";
 import { SiOpenai } from "react-icons/si";
 import { SiGithubcopilot } from "react-icons/si";
 import { SiBruno } from "react-icons/si";
@@ -48,6 +46,10 @@ import { SiDocker } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
+
+// Cloud icons
+import { SiRailway } from "react-icons/si";
+import { SiVercel } from "react-icons/si";
 
 export const NAVIGATION_LINKS = [
   { label: "ผลงาน", href: "#projects" },
