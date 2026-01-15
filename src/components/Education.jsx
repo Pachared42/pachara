@@ -27,7 +27,7 @@ const fadeVariant = {
 
 const Education = () => {
     return (
-        <section className="sm:px-6 pt-20 sm:py-20" id="education">
+        <section className="pt-20" id="education">
             <div className="max-w-3xl sm:max-w-4xl mx-auto">
                 {/* หัวข้อ */}
                 <motion.h1
@@ -55,7 +55,7 @@ const Education = () => {
 
                 {/* รายการ education */}
                 <div className="relative">
-                    <div className="flex flex-col gap-10 px-0 sm:gap-14 sm:px-0 sm:pl-10">
+                    <div className="flex flex-col gap-10 px-0 sm:gap-14 sm:px-0">
                         {EDUCATION.map((edu, index) => (
                             <motion.div
                                 key={index}
@@ -66,7 +66,7 @@ const Education = () => {
                                 variants={fadeVariant}
                                 className="relative"
                             >
-                                <div className="flex flex-col gap-1 sm:p-5 rounded-md">
+                                <div className="flex flex-col gap-1 rounded-md">
                                     <h3 className="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#ef233c] to-[#f9bec7] tracking-tight">
                                         {edu.degree}
                                     </h3>

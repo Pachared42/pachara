@@ -33,7 +33,7 @@ const fadeUpCustom = {
 };
 
 const AnimatedItemGroup = ({ data, extractItems }) => (
-  <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
+  <div className="flex flex-wrap items-center justify-center gap-5 pt-2">
     {data.map((item, index) => (
       <motion.div
         key={index}
@@ -41,7 +41,7 @@ const AnimatedItemGroup = ({ data, extractItems }) => (
         initial="initial"
         animate="animate"
         whileHover={{ scale: 1.1 }}
-        className="rounded-3xl border-4 border-none pl-2 pr-2 flex flex-col items-center"
+        className="rounded-3xl border-4 border-none pl-3 pr-3 flex flex-col items-center"
       >
         {extractItems(item).map((content, i) => (
           <div

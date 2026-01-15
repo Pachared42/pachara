@@ -13,7 +13,7 @@ const fadeUpCustom = {
 
 const Contact = () => {
     return (
-        <section className="sm:px-6 py-20 sm:py-20 bg-transparent" id="contact">
+        <section className="py-20 sm:py-20 bg-transparent" id="contact">
             <div className="max-w-xl mx-auto text-center">
                 {/* หัวข้อ CONTACT ME */}
                 <motion.h1
@@ -46,7 +46,7 @@ const Contact = () => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                    className="text-sm sm:text-base text-gray-400 mb-16 sm:px-0 leading-relaxed"
+                    className="text-sm sm:text-base text-gray-400 mb-6 sm:px-0 leading-relaxed"
                 >
                     สนใจร่วมงานหรืออยากพูดคุยเพิ่มเติม สามารถติดต่อผ่านช่องทางโซเชียลมีเดียด้านล่างได้เลยครับ
                 </motion.p>

@@ -38,7 +38,7 @@ const Hero = () => {
           variants={fadeUpCustom}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="mb-4 p-2 text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight"
+          className="mb-4 p-1 text-6xl sm:text-6xl md:text-5xl lg:text-7xl xl:text-8xl font-extrabold leading-tight"
         >
           {HERO.name}
         </motion.h2>
@@ -48,7 +48,7 @@ const Hero = () => {
           variants={fadeUpCustom}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="block p-2 mb-6 text-lg sm:text-xl md:text-2xl font-semibold bg-gradient-to-r from-[#ef233c] to-[#f9bec7] bg-clip-text text-transparent"
+          className="block p-2 mb-6 text-2xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl font-semibold bg-gradient-to-r from-[#ef233c] to-[#f9bec7] bg-clip-text text-transparent"
         >
           {HERO.greet}
         </motion.span>
@@ -87,7 +87,7 @@ const Hero = () => {
           animate={inView ? "visible" : "hidden"}
           src={pachara}
           alt="pachara"
-          className="rounded-3xl w-[220px] sm:w-[300px] md:w-[400px] lg:w-[500px] object-cover"
+          className="rounded-3xl w-[300px] sm:w-[350px] md:w-[400px] lg:w-[500px] object-cover"
         />
       </div>
     </section>
