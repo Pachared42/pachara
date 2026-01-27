@@ -4,7 +4,7 @@ import PORTFOLIO from "/image/projectImage/PORTFOLIO.png";
 import ECOMMERCE from "/image/projectImage/E-Commerce Platform.png";
 import PIVOTZONE from "/image/projectImage/PivotZone.png";
 import StoreManagementSystemSCI_NEXT from "/image/projectImage/Store Management System SCI_NEXT.png";
-import projectImage4 from "/project4.jpg";
+import Novacloud from "/image/projectImage/Novacloud.png";
 import projectImage5 from "/project5.jpg";
 import projectImage6 from "/project6.jpg";
 
@@ -41,6 +41,8 @@ import { SiBruno } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
 import { SiCanva } from "react-icons/si";
 import { SiDocker } from "react-icons/si";
+import { SiGit } from "react-icons/si";
+import { SiN8N } from "react-icons/si";
 
 // Database icons
 import { SiMysql } from "react-icons/si";
@@ -84,6 +86,7 @@ export const PROJECTS = [
       <SiReact key="react" className="text-[#61DAFB]" />,
       <SiTailwindcss key="tailwind" className="text-[#38BDF8]" />,
       <SiFramer key="framer" className="text-[#0055FF]" />,
+      <SiVercel key="vercel" className="text-[#FFFFFF]" />,
     ],
   },
   {
@@ -92,13 +95,14 @@ export const PROJECTS = [
     description:
       "เว็บไซต์ร้านขายคีย์บอร์ดเกมมิ่งที่ออกแบบมาเพื่อให้ผู้ใช้งานสามารถเลือกซื้อสินค้าได้อย่างสะดวก พร้อมระบบค้นหา เปรียบเทียบรุ่น และดูรายละเอียดสินค้าแบบครบถ้วน รองรับการแสดงผลทั้งบนมือถือและเดสก์ท็อป",
     image: ECOMMERCE,
-    githubLink: "https://github.com/user/ecommerce-platform",
+    githubLink: "https://github.com/Pachared42/melgeeks_shop",
     stackIcons: [
       <SiHtml5 key="html" className="text-[#e34f26]" />,
       <SiCss3 key="css" className="text-[#1572B6]" />,
       <SiJavascript key="js" className="text-[#f7df1e]" />,
       <SiPhp key="php" className="text-[#8892be]" />,
       <SiOracle key="oracle" className="text-[#F80000]" />,
+      <SiRailway key="railway" className="text-[#FFFFFF]" />,
     ],
   },
   {
@@ -112,33 +116,36 @@ export const PROJECTS = [
   },
   {
     id: 4,
-    name: "Store Management System SCI_NEXT (โครงการในมหาวิทยาลัย)",
+    name: "Store Management System SCI_NEXT \n (โครงการในมหาวิทยาลัย)",
     description:
       "ระบบบริหารจัดการร้านค้าแบบครบวงจร พัฒนาขึ้นในโครงการภายในมหาวิทยาลัย โดยมีเป้าหมายเพื่อเพิ่มประสิทธิภาพการจัดเก็บข้อมูลสินค้า การขาย และการจัดการสต๊อกให้เป็นระบบมากขึ้น ผ่านเทคโนโลยีสมัยใหม่และโครงสร้างระบบที่ใช้งานง่าย",
     image: StoreManagementSystemSCI_NEXT,
-    githubLink: "https://github.com/",
+    githubLink: "https://github.com/Pachared42/sci-stock-app",
+    stackIcons: [
+      <SiReact key="react" className="text-[#61DAFB]" />,
+      <SiJavascript key="Javascript" className="text-[#f7df1e]" />,
+      <SiTailwindcss key="tailwind" className="text-[#38BDF8]" />,
+      <SiMui key="Mui" className="text-[#007FFF]" />,
+      <FaGolang key="Golang" className="text-[#00ADD8]" />,
+      <SiMysql key="Mysql" className="text-[#4479A1]" />,
+      <SiVercel key="vercel" className="text-[#FFFFFF]" />,
+      <SiRailway key="railway" className="text-[#FFFFFF]" />,
+    ],
+  },
+  {
+    id: 5,
+    name: "Nova Cloud",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis. Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.",
+    image: Novacloud,
+    githubLink: "https://github.com/Pachared42/Nova",
     stackIcons: [
       <SiReact key="react" className="text-[#61DAFB]" />,
       <SiJavascript key="framer" className="text-[#f7df1e]" />,
       <SiTailwindcss key="tailwind" className="text-[#38BDF8]" />,
-      <SiMui key="framer" className="text-[#007FFF]" />,
       <FaGolang key="framer" className="text-[#00ADD8]" />,
-      <SiMysql key="framer" className="text-[#4479A1]" />,
     ],
   },
-  // {
-  //   id: 5,
-  //   name: "Blog Platform",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis. Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.",
-  //   image: projectImage5,
-  //   githubLink: "https://github.com/user/blog-platform",
-  //   stackIcons: [
-  //     <SiReact key="react" className="text-[#61DAFB]" />,
-  //     <SiTailwindcss key="tailwind" className="text-[#38BDF8]" />,
-  //     <SiFramer key="framer" className="text-[#0055FF]" />,
-  //   ],
-  // },
   // {
   //   id: 6,
   //   name: "Chat Application",
@@ -329,6 +336,20 @@ export const TOOLS = [
   //     <SiDocker className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#2496ED]" />
   //   ),
   //   name: "Docker",
+  //   experience: "",
+  // },
+  {
+    tool14: (
+      <SiGit className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#F1502F]" />
+    ),
+    name: "Git",
+    experience: "",
+  },
+  // {
+  //   tool15: (
+  //     <SiN8N className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#EA4B71]" />
+  //   ),
+  //   name: "n8n",
   //   experience: "",
   // },
 ];
