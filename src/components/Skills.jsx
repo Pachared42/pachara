@@ -1,4 +1,3 @@
-import { i } from "framer-motion/client";
 import { SKILLS } from "../constants";
 import { TOOLS } from "../constants";
 import { DATABASES } from "../constants";
@@ -33,7 +32,7 @@ const fadeUpCustom = {
 };
 
 const AnimatedItemGroup = ({ data, extractItems }) => (
-  <div className="flex flex-wrap items-center justify-center gap-5 pt-2">
+  <div className="flex flex-wrap items-center justify-center gap-8 pt-2">
     {data.map((item, index) => (
       <motion.div
         key={index}
@@ -150,6 +149,8 @@ const Skills = () => {
             item.tool11,
             item.tool12,
             item.tool13,
+            item.tool14,
+            item.tool15,
           ]}
         />
       </motion.div>
