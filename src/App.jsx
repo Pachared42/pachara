@@ -15,7 +15,7 @@ import StarsCanvas from './style/StarsBackground';
 const App = () => {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 2.0,
+      duration: 3.0,
       easing: (t) => 1 -Math.pow(1 - t, 4),
       smoothWheel: true,
       smoothTouch: false,
