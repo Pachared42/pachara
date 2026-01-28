@@ -136,7 +136,7 @@ export const PROJECTS = [
     id: 5,
     name: "Nova Cloud",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis. Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.",
+      "เป็น Cloud Platform สำหรับการ Deploy โปรเจกต์จาก GitHub Repository ซึ่งพัฒนาขึ้นเพื่อวัตถุประสงค์ทางการศึกษาเท่านั้น ไม่ได้มีการนำไปใช้งานเชิงพาณิชย์หรือเปิดให้บริการจริง โดยมีฟีเจอร์หลัก ๆ เช่น การเชื่อมต่อกับ GitHub และการจัดการโปรเจกต์ผ่านแดชบอร์ดที่ใช้งานง่าย",
     image: Novacloud,
     githubLink: "https://github.com/Pachared42/Nova",
     stackIcons: [
