@@ -52,6 +52,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 // Cloud icons
 import { SiRailway } from "react-icons/si";
 import { SiVercel } from "react-icons/si";
+import { img } from "framer-motion/client";
 
 export const NAVIGATION_LINKS = [
   { label: "ผลงาน", href: "#projects" },
@@ -169,56 +170,56 @@ export const ABOUT = [
 export const SKILLS = [
   {
     skill1: (
-      <SiReact className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#61DAFB]" />
+      <img src="/image/skills/react_dark.svg" alt="React" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "React",
     experience: "",
   },
-  // {
-  //   skill2: (
-  //     <SiNextdotjs className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#FFFFFF]" />
-  //   ),
-  //   name: "Next.js",
-  //   experience: "",
-  // },
+  {
+    skill2: (
+      <img src="/image/skills/nextjs_icon_dark.svg" alt="Next.js" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
+    ),
+    name: "Next.js",
+    experience: "",
+  },
   {
     skill3: (
-      <SiVite className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#646CFF]" />
+      <img src="/image/skills/vite.svg" alt="Vite" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "Vite",
     experience: "",
   },
   {
     skill4: (
-      <SiPhp className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#8892BF]" />
+      <img src="/image/skills/php_dark.svg" alt="PHP" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "PHP",
     experience: "",
   },
   {
     skill5: (
-      <RiTailwindCssFill className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#38BDF8]" />
+      <img src="/image/skills/tailwindcss.svg" alt="Tailwind CSS" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "Tailwind CSS",
     experience: "",
   },
   {
     skill6: (
-      <FaHtml5 className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#E34F26]" />
+      <img src="/image/skills/html5.svg" alt="HTML" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "HTML",
     experience: "",
   },
   {
     skill7: (
-      <FaCss3Alt className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#264DE4]" />
+      <img src="/image/skills/css.svg" alt="CSS" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "CSS",
     experience: "",
   },
   {
     skill8: (
-      <SiJavascript className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#F7DF1E]" />
+      <img src="/image/skills/javascript.svg" alt="JavaScript" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "JavaScript",
     experience: "",
@@ -232,14 +233,14 @@ export const SKILLS = [
   // },
   {
     skill10: (
-      <FaGolang className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-[#00ADD8]" />
+      <img src="/image/skills/golang_dark.svg" alt="GoLang" className="w-[60px] sm:w-[60px] md:w-[70px] lg:w-[85px] xl:w-[100px]" />
     ),
     name: "GoLang",
     experience: "",
   },
   {
     skill11: (
-      <SiMui className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#007FFF]" />
+      <img src="/image/skills/materialui.svg" alt="MUI" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "MUI",
     experience: "",
@@ -249,104 +250,97 @@ export const SKILLS = [
 export const TOOLS = [
   {
     tool1: (
-      <VscVscodeInsiders className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#007ACC]" />
+      <img src="/image/skills/vscode.svg" alt="Visual Studio Code" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "Visual Studio Code",
     experience: "",
   },
   {
     tool2: (
-      <IoLogoGithub className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#586069]" />
+      <img src="/image/skills/cursor_dark.svg" alt="Cursor" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
+    ),
+    name: "Cursor",
+    experience: "",
+  },
+  {
+    tool3: (
+      <img src="/image/skills/github_dark.svg" alt="GitHub" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "GitHub",
     experience: "",
   },
   {
-    tool3: (
-      <SiXampp className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FF7A00]" />
-    ),
-    name: "XAMPP",
-    experience: "",
-  },
-  {
     tool4: (
-      <SiMamp className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#7D7D7D]" />
-    ),
-    name: "MAMP",
-    experience: "",
-  },
-  {
-    tool5: (
-      <SiAdobeillustrator className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FF9A00]" />
+      <img src="/image/skills/illustrator.svg" alt="Illustrator" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "Adobe Illustrator",
     experience: "",
   },
   {
-    tool6: (
-      <SiAdobephotoshop className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#31A8FF]" />
+    tool5: (
+      <img src="/image/skills/photoshop.svg" alt="Photoshop" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "Adobe Photoshop",
     experience: "",
   },
   {
-    tool7: (
-      <SiWarp className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FFFFFF]" />
+    tool6: (
+      <img src="/image/skills/warp.svg" alt="Warp" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "Warp",
     experience: "",
   },
   {
-    tool8: (
-      <SiOpenai className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FFFFFF]" />
+    tool7: (
+      <img src="/image/skills/openai_dark.svg" alt="OpenAI" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "OpenAI",
     experience: "",
   },
   {
-    tool9: (
-      <SiGithubcopilot className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#4CB0FB]" />
+    tool8: (
+      <img src="/image/skills/copilot_dark.svg" alt="GitHub Copilot" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "GitHub Copilot",
     experience: "",
   },
   // {
-  //   tool10: (
+  //   tool9: (
   //     <SiBruno className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#2E3A59]" />
   //   ),
   //   name: "SiBruno",
   //   experience: "",
   // },
   {
-    tool11: (
-      <SiPostman className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FF6C37]" />
+    tool10: (
+      <img src="/image/skills/postman.svg" alt="Postman" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
-    name: "SiPostman",
+    name: "Postman",
     experience: "",
   },
   {
-    tool12: (
-      <SiCanva className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#01C3CC]" />
+    tool11: (
+      <img src="/image/skills/canva.svg" alt="Canva" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "Canva",
     experience: "",
   },
   // {
-  //   tool13: (
+  //   tool12: (
   //     <SiDocker className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#2496ED]" />
   //   ),
   //   name: "Docker",
   //   experience: "",
   // },
   {
-    tool14: (
-      <SiGit className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#F1502F]" />
+    tool13: (
+      <img src="/image/skills/git.svg" alt="Git" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "Git",
     experience: "",
   },
   // {
-  //   tool15: (
+  //   tool14: (
   //     <SiN8N className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#EA4B71]" />
   //   ),
   //   name: "n8n",
@@ -357,38 +351,24 @@ export const TOOLS = [
 export const DATABASES = [
   {
     database1: (
-      <SiMysql className="text-7xl sm:text-7xl md:text-[80px] lg:text-[100px] xl:text-[115px] text-[#4479A1]" />
+      <img src="/image/skills/mysql-wordmark-dark.svg" alt="MySQL" className="w-[60px] sm:w-[60px] md:w-[70px] lg:w-[85px] xl:w-[100px]" />
     ),
     name: "MySQL",
     experience: "",
   },
-  // {
-  //   database2: (
-  //     <SiMongodb className="text-6xl sm:text-6xl md:text-[80px] lg:text-[100px] xl:text-[115px] text-[#4DB33D]" />
-  //   ),
-  //   name: "MongoDB",
-  //   experience: "",
-  // },
-  // {
-  //   database3: (
-  //     <BiLogoPostgresql className="text-6xl sm:text-6xl md:text-[80px] lg:text-[100px] xl:text-[115px] text-[#336791]" />
-  //   ),
-  //   name: "PostgreSQL",
-  //   experience: "",
-  // },
 ];
 
 export const CLOUDS = [
   {
     cloud1: (
-      <SiVercel className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FFFFFF]" />
+      <img src="/image/skills/vercel_dark.svg" alt="Vercel" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "Vercel",
     experience: "",
   },
   {
     cloud2: (
-      <SiRailway className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#FFFFFF]" />
+      <img src="/image/skills/railway_dark.svg" alt="Railway" className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]" />
     ),
     name: "Railway",
     experience: "",
