@@ -38,7 +38,8 @@ const AnimatedItemGroup = ({ data, extractItems }) => (
         key={index}
         variants={floatingVariants(index)}
         initial="initial"
-        animate="animate"
+        whileInView="animate"
+        viewport={{ once: true, amount:0.2 }}
         whileHover={{ scale: 1.1 }}
         className="rounded-3xl border-4 border-none pl-3 pr-3 flex flex-col items-center"
       >
@@ -58,7 +59,7 @@ const AnimatedItemGroup = ({ data, extractItems }) => (
 
 const Skills = () => {
   return (
-    <section className="flex max-w-4xl flex-col pt-20" id="skills">
+    <section className="relative mx-auto w-full max-w-4xl flex-col pt-20 overflow-visible" id="skills">
       {/* SKILL */}
       <motion.h1
         custom={0}
