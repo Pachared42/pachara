@@ -15,7 +15,7 @@ const floatingVariants = (index) => {
       transition: {
         duration: duration,
         ease: "easeInOut",
-        repeat: Infinity,
+        repeat: 3,
         repeatType: "reverse",
       },
     },
@@ -39,15 +39,15 @@ const AnimatedItemGroup = ({ data, extractItems }) => (
         variants={floatingVariants(index)}
         initial="initial"
         whileInView="animate"
-        viewport={{ once: true, amount:0.2 }}
+        viewport={{ once: true, amount:0.3 }}
         whileHover={{ scale: 1.1 }}
-        className="rounded-3xl border-4 border-none pl-3 pr-3 flex flex-col items-center"
+        className="rounded-3xl pl-3 pr-3 flex flex-col items-center"
       >
         {extractItems(item).map((content, i) => (
           <div
             key={i}
             className="flex items-center justify-center"
-            aria-label={`Item: ${content}`}
+            aria-label={`Item icon`}
           >
             {content}
           </div>
@@ -59,7 +59,7 @@ const AnimatedItemGroup = ({ data, extractItems }) => (
 
 const Skills = () => {
   return (
-    <section className="relative mx-auto w-full max-w-4xl flex-col pt-20 overflow-visible" id="skills">
+    <section className="relative mx-auto w-full max-w-4xl flex flex-col pt-20 overflow-visible" id="skills">
       {/* SKILL */}
       <motion.h1
         custom={0}
