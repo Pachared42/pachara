@@ -38,8 +38,7 @@ const AnimatedItemGroup = ({ data, extractItems }) => (
         key={index}
         variants={floatingVariants(index)}
         initial="initial"
-        whileInView="animate"
-        viewport={{ once: true, amount:0.3 }}
+        animate="animate"
         whileHover={{ scale: 1.1 }}
         className="rounded-3xl pl-3 pr-3 flex flex-col items-center"
       >
@@ -66,7 +65,7 @@ const Skills = () => {
         variants={fadeUpCustom}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.2 }}
         className="mb-1 text-center text-3xl sm:text-4xl lg:text-6xl font-bold"
       >
         SKILL
@@ -76,7 +75,7 @@ const Skills = () => {
         variants={fadeUpCustom}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.2 }}
         className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-[#ef233c] to-[#f9bec7] text-base sm:text-lg"
       >
         ดูรายละเอียดเพิ่มเติม
@@ -86,7 +85,7 @@ const Skills = () => {
         variants={fadeUpCustom}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <AnimatedItemGroup
           data={SKILLS}
@@ -112,7 +111,7 @@ const Skills = () => {
         variants={fadeUpCustom}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.2 }}
         className="pt-20 mb-1 text-center text-3xl sm:text-4xl lg:text-6xl font-bold"
       >
         TOOL
@@ -122,7 +121,7 @@ const Skills = () => {
         variants={fadeUpCustom}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.2 }}
         className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-[#ef233c] to-[#f9bec7] text-base sm:text-lg"
       >
         ดูรายละเอียดเพิ่มเติม
@@ -132,7 +131,7 @@ const Skills = () => {
         variants={fadeUpCustom}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <AnimatedItemGroup
           data={TOOLS}
@@ -162,7 +161,7 @@ const Skills = () => {
         variants={fadeUpCustom}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.2 }}
         className="pt-20 mb-1 text-center text-3xl sm:text-4xl lg:text-6xl font-bold"
       >
         DATABASE
@@ -172,7 +171,7 @@ const Skills = () => {
         variants={fadeUpCustom}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.2 }}
         className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-[#ef233c] to-[#f9bec7] text-base sm:text-lg"
       >
         ดูรายละเอียดเพิ่มเติม
@@ -182,7 +181,7 @@ const Skills = () => {
         variants={fadeUpCustom}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <AnimatedItemGroup
           data={DATABASES}
@@ -202,7 +201,7 @@ const Skills = () => {
         variants={fadeUpCustom}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.2 }}
         className="pt-20 mb-1 text-center text-3xl sm:text-4xl lg:text-6xl font-bold"
       >
         CLOUD
@@ -212,7 +211,7 @@ const Skills = () => {
         variants={fadeUpCustom}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.2 }}
         className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-[#ef233c] to-[#f9bec7] text-base sm:text-lg"
       >
         ดูรายละเอียดเพิ่มเติม
@@ -222,7 +221,7 @@ const Skills = () => {
         variants={fadeUpCustom}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <AnimatedItemGroup
           data={CLOUDS}
