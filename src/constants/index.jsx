@@ -53,10 +53,10 @@ import { SiVercel } from "react-icons/si";
 import { img } from "framer-motion/client";
 
 export const NAVIGATION_LINKS = [
-  { label: "ผลงาน", href: "#projects" },
   { label: "ประวัติ", href: "#about" },
-  { label: "ทักษะ", href: "#skills" },
   { label: "การศึกษา", href: "#education" },
+  { label: "ผลงาน", href: "#projects" },
+  { label: "ทักษะ", href: "#skills" },
   { label: "ติดต่อ", href: "#contact" },
   {
     /* { label: "ประสบการณ์", href: "#experience" }, */
@@ -145,19 +145,6 @@ export const PROJECTS = [
       <FaGolang key="framer" className="text-[#00ADD8]" />,
     ],
   },
-  // {
-  //   id: 6,
-  //   name: "Chat Application",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus, inventore deserunt laudantium debitis saepe eius magnam sunt, minus facilis omnis. Debitis, ducimus. Pariatur aut magni consequuntur eveniet ipsum tenetur.",
-  //   image: projectImage6,
-  //   githubLink: "https://github.com/user/chat-application",
-  //   stackIcons: [
-  //     <SiReact key="react" className="text-[#61DAFB]" />,
-  //     <SiTailwindcss key="tailwind" className="text-[#38BDF8]" />,
-  //     <SiFramer key="framer" className="text-[#0055FF]" />,
-  //   ],
-  // },
 ];
 
 export const ABOUT = [
@@ -167,7 +154,7 @@ export const ABOUT = [
 
 export const SKILLS = [
   {
-    skill1: (
+    skill: (
       <img
         src="/image/skills/react_dark.svg"
         alt="React"
@@ -178,7 +165,7 @@ export const SKILLS = [
     experience: "",
   },
   {
-    skill2: (
+    skill: (
       <img
         src="/image/skills/nextjs_icon_dark.svg"
         alt="Next.js"
@@ -188,8 +175,19 @@ export const SKILLS = [
     name: "Next.js",
     experience: "",
   },
+  // {
+  //   skill: (
+  //     <img
+  //       src="/image/skills/angular.svg"
+  //       alt="Angular"
+  //       className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
+  //     />
+  //   ),
+  //   name: "Angular",
+  //   experience: "",
+  // },
   {
-    skill3: (
+    skill: (
       <img
         src="/image/skills/vite.svg"
         alt="Vite"
@@ -199,8 +197,19 @@ export const SKILLS = [
     name: "Vite",
     experience: "",
   },
+  // {
+  //   skill: (
+  //     <img
+  //       src="/image/skills/dotnet.svg"
+  //       alt=".NET"
+  //       className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
+  //     />
+  //   ),
+  //   name: ".NET",
+  //   experience: "",
+  // },
   {
-    skill4: (
+    skill: (
       <img
         src="/image/skills/php_dark.svg"
         alt="PHP"
@@ -210,19 +219,19 @@ export const SKILLS = [
     name: "PHP",
     experience: "",
   },
+  // {
+  //   skill: (
+  //     <img
+  //       src="/image/skills/csharp.svg"
+  //       alt="C#"
+  //       className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
+  //     />
+  //   ),
+  //   name: "C#",
+  //   experience: "",
+  // },
   {
-    skill5: (
-      <img
-        src="/image/skills/tailwindcss.svg"
-        alt="Tailwind CSS"
-        className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
-      />
-    ),
-    name: "Tailwind CSS",
-    experience: "",
-  },
-  {
-    skill6: (
+    skill: (
       <img
         src="/image/skills/html5.svg"
         alt="HTML"
@@ -233,7 +242,7 @@ export const SKILLS = [
     experience: "",
   },
   {
-    skill7: (
+    skill: (
       <img
         src="/image/skills/css.svg"
         alt="CSS"
@@ -244,7 +253,7 @@ export const SKILLS = [
     experience: "",
   },
   {
-    skill8: (
+    skill: (
       <img
         src="/image/skills/javascript.svg"
         alt="JavaScript"
@@ -255,14 +264,18 @@ export const SKILLS = [
     experience: "",
   },
   // {
-  //   skill9: (
-  //     <SiTypescript className="text-5xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#3178C6]" />
+  //   skill: (
+  //     <img
+  //       src="/image/skills/typescript.svg"
+  //       alt="Typescript"
+  //       className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
+  //     />
   //   ),
   //   name: "Typescript",
   //   experience: "",
   // },
   {
-    skill10: (
+    skill: (
       <img
         src="/image/skills/golang_dark.svg"
         alt="GoLang"
@@ -273,7 +286,7 @@ export const SKILLS = [
     experience: "",
   },
   {
-    skill11: (
+    skill: (
       <img
         src="/image/skills/materialui.svg"
         alt="MUI"
@@ -283,11 +296,22 @@ export const SKILLS = [
     name: "MUI",
     experience: "",
   },
+  {
+    skill: (
+      <img
+        src="/image/skills/tailwindcss.svg"
+        alt="Tailwind CSS"
+        className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
+      />
+    ),
+    name: "Tailwind CSS",
+    experience: "",
+  },
 ];
 
 export const TOOLS = [
   {
-    tool1: (
+    tool: (
       <img
         src="/image/skills/vscode.svg"
         alt="Visual Studio Code"
@@ -298,7 +322,7 @@ export const TOOLS = [
     experience: "",
   },
   {
-    tool2: (
+    tool: (
       <img
         src="/image/skills/cursor_dark.svg"
         alt="Cursor"
@@ -309,7 +333,18 @@ export const TOOLS = [
     experience: "",
   },
   {
-    tool3: (
+    tool: (
+      <img
+        src="/image/skills/git.svg"
+        alt="Git"
+        className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
+      />
+    ),
+    name: "Git",
+    experience: "",
+  },
+  {
+    tool: (
       <img
         src="/image/skills/github_dark.svg"
         alt="GitHub"
@@ -320,7 +355,7 @@ export const TOOLS = [
     experience: "",
   },
   {
-    tool4: (
+    tool: (
       <img
         src="/image/skills/illustrator.svg"
         alt="Illustrator"
@@ -331,7 +366,7 @@ export const TOOLS = [
     experience: "",
   },
   {
-    tool5: (
+    tool: (
       <img
         src="/image/skills/photoshop.svg"
         alt="Photoshop"
@@ -342,7 +377,7 @@ export const TOOLS = [
     experience: "",
   },
   {
-    tool6: (
+    tool: (
       <img
         src="/image/skills/warp.svg"
         alt="Warp"
@@ -353,7 +388,7 @@ export const TOOLS = [
     experience: "",
   },
   {
-    tool7: (
+    tool: (
       <img
         src="/image/skills/openai_dark.svg"
         alt="OpenAI"
@@ -364,7 +399,7 @@ export const TOOLS = [
     experience: "",
   },
   {
-    tool8: (
+    tool: (
       <img
         src="/image/skills/copilot_dark.svg"
         alt="GitHub Copilot"
@@ -375,14 +410,14 @@ export const TOOLS = [
     experience: "",
   },
   // {
-  //   tool9: (
+  //   tool: (
   //     <SiBruno className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#2E3A59]" />
   //   ),
   //   name: "SiBruno",
   //   experience: "",
   // },
   {
-    tool10: (
+    tool: (
       <img
         src="/image/skills/postman.svg"
         alt="Postman"
@@ -393,7 +428,7 @@ export const TOOLS = [
     experience: "",
   },
   {
-    tool11: (
+    tool: (
       <img
         src="/image/skills/canva.svg"
         alt="Canva"
@@ -404,26 +439,23 @@ export const TOOLS = [
     experience: "",
   },
   // {
-  //   tool12: (
-  //     <SiDocker className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#2496ED]" />
+  //   tool: (
+  //     <img
+  //       src="/image/skills/docker.svg"
+  //       alt="Docker"
+  //       className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
+  //     />
   //   ),
   //   name: "Docker",
   //   experience: "",
   // },
-  {
-    tool13: (
-      <img
-        src="/image/skills/git.svg"
-        alt="Git"
-        className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
-      />
-    ),
-    name: "Git",
-    experience: "",
-  },
   // {
-  //   tool14: (
-  //     <SiN8N className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#EA4B71]" />
+  //   tool: (
+  //     <img
+  //       src="/image/skills/n8n.svg"
+  //       alt="n8n"
+  //       className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
+  //     />
   //   ),
   //   name: "n8n",
   //   experience: "",
@@ -432,7 +464,7 @@ export const TOOLS = [
 
 export const DATABASES = [
   {
-    database1: (
+    database: (
       <img
         src="/image/skills/mysql-wordmark-dark.svg"
         alt="MySQL"
@@ -442,11 +474,44 @@ export const DATABASES = [
     name: "MySQL",
     experience: "",
   },
+  // {
+  //   database: (
+  //     <img
+  //       src="/image/skills/sql-server.svg"
+  //       alt="SQL Server"
+  //       className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
+  //     />
+  //   ),
+  //   name: "SQL Server",
+  //   experience: "",
+  // },
+  // {
+  //   database: (
+  //     <img
+  //       src="/image/skills/postgresql.svg"
+  //       alt="PostgreSQL"
+  //       className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
+  //     />
+  //   ),
+  //   name: "PostgreSQL",
+  //   experience: "",
+  // },
+  // {
+  //   database: (
+  //     <img
+  //       src="/image/skills/redis.svg"
+  //       alt="Redis"
+  //       className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
+  //     />
+  //   ),
+  //   name: "Redis",
+  //   experience: "",
+  // },
 ];
 
 export const CLOUDS = [
   {
-    cloud1: (
+    cloud: (
       <img
         src="/image/skills/vercel_dark.svg"
         alt="Vercel"
@@ -457,7 +522,7 @@ export const CLOUDS = [
     experience: "",
   },
   {
-    cloud2: (
+    cloud: (
       <img
         src="/image/skills/railway_dark.svg"
         alt="Railway"
