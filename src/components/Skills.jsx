@@ -90,17 +90,7 @@ const Skills = () => {
         <AnimatedItemGroup
           data={SKILLS}
           extractItems={(item) => [
-            item.skill1,
-            item.skill2,
-            item.skill3,
-            item.skill4,
-            item.skill5,
-            item.skill6,
-            item.skill7,
-            item.skill8,
-            item.skill9,
-            item.skill10,
-            item.skill11,
+            item.skill
           ]}
         />
       </motion.div>
@@ -136,21 +126,7 @@ const Skills = () => {
         <AnimatedItemGroup
           data={TOOLS}
           extractItems={(item) => [
-            item.tool1,
-            item.tool2,
-            item.tool3,
-            item.tool4,
-            item.tool5,
-            item.tool6,
-            item.tool7,
-            item.tool8,
-            item.tool9,
-            item.tool10,
-            item.tool11,
-            item.tool12,
-            item.tool13,
-            item.tool14,
-            item.tool15,
+            item.tool
           ]}
         />
       </motion.div>
@@ -186,11 +162,7 @@ const Skills = () => {
         <AnimatedItemGroup
           data={DATABASES}
           extractItems={(item) => [
-            item.database1,
-            item.database2,
-            item.database3,
-            item.database4,
-            item.database5,
+            item.database
           ]}
         />
       </motion.div>
@@ -226,8 +198,7 @@ const Skills = () => {
         <AnimatedItemGroup
           data={CLOUDS}
           extractItems={(item) => [
-            item.cloud1,
-            item.cloud2,
+            item.cloud
           ]}
         />
       </motion.div>
