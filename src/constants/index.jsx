@@ -82,10 +82,26 @@ export const PROJECTS = [
     image: PORTFOLIO,
     githubLink: "https://github.com/Pachared42/pachara",
     stackIcons: [
-      <SiReact key="react" className="text-[#61DAFB]" />,
-      <SiTailwindcss key="tailwind" className="text-[#38BDF8]" />,
-      <SiFramer key="framer" className="text-[#0055FF]" />,
-      <SiVercel key="vercel" className="text-[#FFFFFF]" />,
+      <img
+        src="/image/skills/react_dark.svg"
+        alt="React"
+        className="w-[30px] sm:w-[30px] md:w-[40px] lg:w-[45px] xl:w-[50px]"
+      />,
+      <img
+        src="/image/skills/tailwindcss.svg"
+        alt="React"
+        className="w-[30px] sm:w-[30px] md:w-[40px] lg:w-[45px] xl:w-[50px]"
+      />,
+      <img
+        src="/image/skills/motion_dark.svg"
+        alt="React"
+        className="w-[40px] sm:w-[40px] md:w-[50px] lg:w-[55px] xl:w-[60px]"
+      />,
+      <img
+        src="/image/skills/vercel_dark.svg"
+        alt="React"
+        className="w-[30px] sm:w-[30px] md:w-[40px] lg:w-[45px] xl:w-[50px]"
+      />,
     ],
   },
   {
