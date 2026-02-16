@@ -35,19 +35,16 @@ const App = () => {
 
   return (
     <div className="relative bg-fixed bg-cover bg-center bg-img">
-      {/* ใส่ฉากหลัง Star */}
       <StarsCanvas />
 
-      {/* เนื้อหาเว็บ */}
       <div className="relative z-10 flex flex-col items-center p-6 container mx-auto">
         <Navbar />
         <Hero />
         <About />
         <Education />
+        {/* <Experience /> */}
         <Projects />
         <Skills />
-        {/* <Experience /> */}
-        {/* ปิดการใช้งาน Experience ชั่วคราว */}
         <Contact />
         <Footer />
       </div>
