@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { EDUCATION } from "../constants";
 
-// fadeUp แบบ custom delay ตาม index
 const fadeUpCustom = {
     hidden: (i) => ({ opacity: 0, y: 30 }),
     visible: (i) => ({
@@ -11,14 +10,13 @@ const fadeUpCustom = {
     }),
 };
 
-// รายการ education ขึ้นแบบมี delay เริ่มหลังหัวข้อกับข้อความ
 const fadeVariant = {
     hidden: { opacity: 0, y: 25 },
     visible: (i) => ({
         opacity: 1,
         y: 0,
         transition: {
-            delay: 0.1 + i * 0.1, // offset 0.6 วินาที หลังหัวข้อและข้อความ
+            delay: 0.1 + i * 0.1,
             type: "spring",
             stiffness: 70,
         },
