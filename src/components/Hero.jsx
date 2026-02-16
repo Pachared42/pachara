@@ -71,10 +71,10 @@ const Hero = () => {
           className="p-2 flex flex-col gap-4 sm:flex-row sm:items-center"
         >
           <button
-            onClick={() => window.open("mailto:pachared.amr12@gmail.com")}
+            onClick={() => window.open("/Resume-Pachara.pdf", "_blank")}
             className="z-[1] hover:bg-white rounded-3xl text-white font-semibold hover:text-black py-3 px-8 md:px-10 border border-white hover:border-transparent transition-colors duration-300"
           >
-            ติดต่อฉันมาได้นะ
+            ดาวน์โหลด Resume
           </button>
         </motion.div>
       </div>
