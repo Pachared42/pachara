@@ -496,17 +496,17 @@ export const DATABASES = [
   //   name: "PostgreSQL",
   //   experience: "",
   // },
-  // {
-  //   database: (
-  //     <img
-  //       src="/image/skills/redis.svg"
-  //       alt="Redis"
-  //       className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
-  //     />
-  //   ),
-  //   name: "Redis",
-  //   experience: "",
-  // },
+  {
+    database: (
+      <img
+        src="/image/skills/redis.svg"
+        alt="Redis"
+        className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
+      />
+    ),
+    name: "Redis",
+    experience: "",
+  },
 ];
 
 export const CLOUDS = [
