@@ -72,7 +72,7 @@ const Hero = () => {
         >
           <button
             onClick={() => window.open("/Resume-Pachara.pdf", "_blank")}
-            className="z-[1] hover:bg-white rounded-3xl text-white font-semibold hover:text-black py-3 px-8 md:px-10 border border-white hover:border-transparent transition-colors duration-300"
+            className="z-[1] hover:bg-white rounded-xl text-white font-semibold hover:text-black py-3 px-8 md:px-10 border border-white hover:border-transparent transition-colors duration-300"
           >
             ดาวน์โหลด Resume
           </button>
