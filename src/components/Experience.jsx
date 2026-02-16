@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { EXPERIENCES } from "../constants";
 
-// Animation fadeUp แบบมี delay ตาม custom index
 const fadeUpCustom = {
     hidden: (i) => ({ opacity: 0, y: 30 }),
     visible: (i) => ({
@@ -11,14 +10,13 @@ const fadeUpCustom = {
     }),
 };
 
-// Animation รายการ experience ทีละอันแบบมี delay ตามลำดับ index + offset
-const cardVariants = {
+const fadeVariant = {
     hidden: { opacity: 0, y: 25 },
     visible: (i) => ({
         opacity: 1,
         y: 0,
         transition: {
-            delay: 0.1 + i * 0.1, // offset 0.6 เพื่อให้ต่อจากหัวข้อกับข้อความ
+            delay: 0.1 + i * 0.1,
             type: "spring",
             stiffness: 70,
         },
@@ -27,7 +25,7 @@ const cardVariants = {
 
 const Experience = () => {
     return (
-        <section className="sm:px-6 pt-20 sm:py-20" id="experience">
+        <section className="pt-20" id="experience">
             <div className="max-w-3xl sm:max-w-4xl mx-auto">
                 {/* หัวข้อ EXPERIENCES */}
                 <motion.h1
@@ -55,7 +53,7 @@ const Experience = () => {
 
                 {/* รายการประสบการณ์ */}
                 <div className="relative">
-                    <div className="flex flex-col gap-10 px-0 sm:gap-14 sm:px-0 sm:pl-10">
+                    <div className="flex flex-col gap-10 px-0 sm:gap-14 sm:px-0">
                         {EXPERIENCES.map((exp, index) => (
                             <motion.div
                                 key={index}
@@ -63,10 +61,10 @@ const Experience = () => {
                                 initial="hidden"
                                 whileInView="visible"
                                 viewport={{ once: true, amount: 0.3 }}
-                                variants={cardVariants}
+                                variants={fadeVariant}
                                 className="relative"
                             >
-                                <div className="flex flex-col gap-1 sm:p-5 rounded-md">
+                                <div className="flex flex-col gap-1 rounded-md">
                                     <h3 className="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#ef233c] to-[#f9bec7] tracking-tight">
                                         {exp.title}
                                     </h3>
