@@ -50,7 +50,7 @@ const Hero = () => {
           animate={inView ? "visible" : "hidden"}
           className="block p-2 mb-6 text-2xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl font-semibold bg-gradient-to-r from-[#ef233c] to-[#f9bec7] bg-clip-text text-transparent"
         >
-          {HERO.greet}
+          {HERO.greet3}
         </motion.span>
 
         <motion.p
