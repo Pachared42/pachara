@@ -68,7 +68,7 @@ export const HERO = {
   greet3: "FULL-STACK DEVELOPER",
   greet4: "TEAM LEAD DEVELOPER",
   description:
-    "ฉันเป็น Front-End Developer ที่หลงใหลในการออกแบบและสร้างสรรค์ UI ที่สวยงามและตอบโจทย์ประสบการณ์ผู้ใช้งาน พร้อมมุ่งมั่นพัฒนาทักษะด้านการเขียนโค้ดและแก้ปัญหาอย่างเป็นระบบ เพื่อเติบโตสู่การเป็น Team Lead Developer ในอนาคต และเปิดรับความท้าทายใหม่ ๆ อยู่เสมอ",
+    "ฉันเป็น Full-Stack Developer ที่มุ่งเน้นการพัฒนาเว็บแอปพลิเคชันที่ทั้งสวยงาม ใช้งานง่าย และมีโครงสร้างระบบที่แข็งแรง ตั้งแต่ Frontend จนถึง Backend พร้อมพัฒนาทักษะอย่างต่อเนื่อง เพื่อก้าวสู่การเป็น Team Lead Developer ในอนาคต และพร้อมรับความท้าทายใหม่ ๆ อยู่เสมอ",
 };
 
 export const PROJECTS = [
@@ -162,8 +162,8 @@ export const PROJECTS = [
 ];
 
 export const ABOUT = [
-  "ผมเป็นนักศึกษาระดับปริญญาตรี จากมหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ ศูนย์สุพรรณบุรี มีความหลงใหลในการออกแบบและพัฒนาเว็บไซต์ โดยเฉพาะในสายงาน Front-End Developer พร้อมให้ความสำคัญกับการสร้างสรรค์ผลงานที่สวยงามและตอบโจทย์ผู้ใช้งานอยู่เสมอ",
-  "ด้วยความมุ่งมั่นในการเรียนรู้และพัฒนาทักษะอย่างต่อเนื่อง ผมตั้งเป้าหมายในการเติบโตสู่การเป็น Team Lead Developer โดยเน้นการออกแบบซอฟต์แวร์ที่มีคุณภาพ และประสบการณ์ผู้ใช้ที่ดีเยี่ยมควบคู่กันไป",
+  "ผมเป็นนักศึกษาระดับปริญญาตรี จากมหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ ศูนย์สุพรรณบุรี มีความสนใจในการพัฒนาเว็บแอปพลิเคชันแบบ Full-Stack ตั้งแต่การออกแบบ UI ที่สวยงามและใช้งานง่าย ไปจนถึงการพัฒนาระบบ Backend ที่มีโครงสร้างชัดเจน ปลอดภัย และสามารถขยายต่อได้ในอนาคต",
+  "ผมมุ่งมั่นพัฒนาทักษะด้านการเขียนโปรแกรม การออกแบบสถาปัตยกรรมซอฟต์แวร์ และการแก้ปัญหาอย่างเป็นระบบ เพื่อเติบโตสู่การเป็น Team Lead Developer ที่สามารถสร้างระบบที่มีคุณภาพและมอบประสบการณ์ที่ดีให้กับผู้ใช้งาน",
 ];
 
 export const SKILLS = [
@@ -277,17 +277,17 @@ export const SKILLS = [
     name: "JavaScript",
     experience: "",
   },
-  // {
-  //   skill: (
-  //     <img
-  //       src="/image/skills/typescript.svg"
-  //       alt="Typescript"
-  //       className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
-  //     />
-  //   ),
-  //   name: "Typescript",
-  //   experience: "",
-  // },
+  {
+    skill: (
+      <img
+        src="/image/skills/typescript.svg"
+        alt="Typescript"
+        className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
+      />
+    ),
+    name: "Typescript",
+    experience: "",
+  },
   {
     skill: (
       <img
@@ -452,17 +452,17 @@ export const TOOLS = [
     name: "Canva",
     experience: "",
   },
-  // {
-  //   tool: (
-  //     <img
-  //       src="/image/skills/docker.svg"
-  //       alt="Docker"
-  //       className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
-  //     />
-  //   ),
-  //   name: "Docker",
-  //   experience: "",
-  // },
+  {
+    tool: (
+      <img
+        src="/image/skills/docker.svg"
+        alt="Docker"
+        className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
+      />
+    ),
+    name: "Docker",
+    experience: "",
+  },
   // {
   //   tool: (
   //     <img
