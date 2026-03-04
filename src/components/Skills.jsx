@@ -1,7 +1,7 @@
-import { SKILLS } from "../constants";
-import { TOOLS } from "../constants";
-import { DATABASES } from "../constants";
-import { CLOUDS } from "../constants";
+import { SKILLS } from "../constants/SkillsConstants";
+import { TOOLS } from "../constants/SkillsConstants";
+import { DATABASES } from "../constants/SkillsConstants";
+import { CLOUDS } from "../constants/SkillsConstants";
 import { motion } from "framer-motion";
 
 const floatingVariants = (index) => {
@@ -76,7 +76,7 @@ const Skills = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-[#ef233c] to-[#f9bec7] text-base sm:text-lg"
+        className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-linear-to-r from-[#ef233c] to-[#f9bec7] text-base sm:text-lg"
       >
         ดูรายละเอียดเพิ่มเติม
       </motion.p>
@@ -112,7 +112,7 @@ const Skills = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-[#ef233c] to-[#f9bec7] text-base sm:text-lg"
+        className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-linear-to-r from-[#ef233c] to-[#f9bec7] text-base sm:text-lg"
       >
         ดูรายละเอียดเพิ่มเติม
       </motion.p>
@@ -148,7 +148,7 @@ const Skills = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-[#ef233c] to-[#f9bec7] text-base sm:text-lg"
+        className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-linear-to-r from-[#ef233c] to-[#f9bec7] text-base sm:text-lg"
       >
         ดูรายละเอียดเพิ่มเติม
       </motion.p>
@@ -184,7 +184,7 @@ const Skills = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-[#ef233c] to-[#f9bec7] text-base sm:text-lg"
+        className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-linear-to-r from-[#ef233c] to-[#f9bec7] text-base sm:text-lg"
       >
         ดูรายละเอียดเพิ่มเติม
       </motion.p>

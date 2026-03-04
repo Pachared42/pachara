@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "/Pachara.png";
-import { NAVIGATION_LINKS } from "../constants";
+import { NAVIGATION_LINKS } from "../constants/NavbarConstants";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
 import { AnimatePresence, motion } from "framer-motion";
@@ -46,7 +46,7 @@ const Navbar = () => {
                 {NAVIGATION_LINKS.map((item, index) => (
                   <li key={index}>
                     <a
-                      className="text-white hover:text-transparent hover:bg-gradient-to-r from-[#ef233c] to-[#f9bec7] bg-clip-text"
+                      className="text-white hover:text-transparent hover:bg-linear-to-r from-[#ef233c] to-[#f9bec7] bg-clip-text"
                       href={item.href}
                       onClick={(e) => handleLinkClick(e, item.href)}
                     >

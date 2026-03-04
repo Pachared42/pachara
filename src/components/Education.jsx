@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { EDUCATION } from "../constants";
+import { EDUCATION } from "../constants/EducationConstants";
 
 const fadeUpCustom = {
     hidden: (i) => ({ opacity: 0, y: 30 }),
@@ -46,7 +46,7 @@ const Education = () => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                    className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-[#ef233c] to-[#f9bec7] text-base sm:text-lg"
+                    className="tracking-[0.15em] text-center text-transparent font-light pb-5 bg-clip-text bg-linear-to-r from-[#ef233c] to-[#f9bec7] text-base sm:text-lg"
                     >
                     ดูรายละเอียดเพิ่มเติม
                 </motion.p>
@@ -65,7 +65,7 @@ const Education = () => {
                                 className="relative"
                             >
                                 <div className="flex flex-col gap-1 rounded-md">
-                                    <h3 className="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#ef233c] to-[#f9bec7] tracking-tight">
+                                    <h3 className="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#ef233c] to-[#f9bec7] tracking-tight">
                                         {edu.degree}
                                     </h3>
                                     <p className="text-sm text-gray-300">

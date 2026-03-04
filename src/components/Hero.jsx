@@ -1,9 +1,8 @@
 import { useInView } from "react-intersection-observer";
-import { HERO } from "../constants";
+import { HERO } from "../constants/HeroConstants";
 import pachara from "/pachara.jpg";
 import { motion } from "framer-motion";
 
-// สร้าง fadeUpCustom เหมือน sections อื่น
 const fadeUpCustom = {
   hidden: (i) => ({ opacity: 0, y: 30 }),
   visible: (i) => ({
@@ -13,7 +12,6 @@ const fadeUpCustom = {
   }),
 };
 
-// ภาพใช้ custom เช่นกัน แต่แยก scale ด้วย
 const imageCustom = {
   hidden: { scale: 0.8, opacity: 0 },
   visible: {
@@ -48,7 +46,7 @@ const Hero = () => {
           variants={fadeUpCustom}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="block p-2 mb-6 text-2xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl font-semibold bg-gradient-to-r from-[#ef233c] to-[#f9bec7] bg-clip-text text-transparent"
+          className="block p-2 mb-6 text-2xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl font-semibold bg-linear-to-r from-[#ef233c] to-[#f9bec7] bg-clip-text text-transparent"
         >
           {HERO.greet3}
         </motion.span>
@@ -72,7 +70,7 @@ const Hero = () => {
         >
           <button
             onClick={() => window.open("/Resume-Pachara.pdf", "_blank")}
-            className="z-[1] hover:bg-white rounded-xl text-white font-semibold hover:text-black py-3 px-8 md:px-10 border border-white hover:border-transparent transition-colors duration-300"
+            className="z-1 hover:bg-white rounded-xl text-white font-semibold hover:text-black py-3 px-8 md:px-10 border border-white/30 hover:border-transparent transition-colors duration-300 cursor-pointer"
           >
             ดาวน์โหลด Resume
           </button>
@@ -87,7 +85,7 @@ const Hero = () => {
           animate={inView ? "visible" : "hidden"}
           src={pachara}
           alt="pachara"
-          className="rounded-3xl w-[300px] sm:w-[350px] md:w-[400px] lg:w-[500px] object-cover"
+          className="rounded-3xl w-75 sm:w-87.5 md:w-100 lg:w-125 object-cover"
         />
       </div>
     </section>
