@@ -144,7 +144,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
-                  className="z-10 hover:bg-white rounded-3xl text-white font-semibold hover:text-black py-3 px-10 border border-white transition-all duration-300 ease-in-out"
+                  className="z-10 hover:bg-white rounded-xl text-white font-semibold hover:text-black py-2 px-6 border border-white/30 transition-all duration-300 ease-in-out"
                 >
                   <div className="flex items-center">
                     <span>เข้าชมบน GitHub</span>
