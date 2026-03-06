@@ -123,6 +123,28 @@ export const SKILLS = [
   {
     skill: (
       <img
+        src="/image/skills/reactrouter.svg"
+        alt="Reactrouter"
+        className="w-12.5 sm:w-12.5 md:w-15 lg:w-18.75 xl:w-21.25"
+      />
+    ),
+    name: "Reactrouter",
+    experience: "",
+  },
+  {
+    skill: (
+      <img
+        src="/image/skills/jwt.svg"
+        alt="JWT"
+        className="w-12.5 sm:w-12.5 md:w-15 lg:w-18.75 xl:w-21.25"
+      />
+    ),
+    name: "JWT",
+    experience: "",
+  },
+  {
+    skill: (
+      <img
         src="/image/skills/golang_dark.svg"
         alt="GoLang"
         className="w-15 sm:w-15 md:w-17.5 lg:w-21.25 xl:w-25"
