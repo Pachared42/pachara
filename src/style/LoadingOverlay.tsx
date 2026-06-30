@@ -1,9 +1,13 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect } from "react";
 
-export default function LoadingOverlay({ open }) {
+type LoadingOverlayProps = {
+  open: boolean;
+};
+
+export default function LoadingOverlay({ open }: LoadingOverlayProps) {
   useEffect(() => {
-    const prevent = (e) => e.preventDefault();
+    const prevent = (e: Event) => e.preventDefault();
     const previousBodyOverflow = document.body.style.overflow;
     const previousHtmlOverflow = document.documentElement.style.overflow;
 

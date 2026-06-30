@@ -1,4 +1,6 @@
-export const SKILLS = [
+import type { SkillCategory, SkillIconItem } from "../types";
+
+export const SKILLS: SkillIconItem[] = [
   {
     skill: (
       <img
@@ -21,17 +23,6 @@ export const SKILLS = [
     name: "Next.js",
     experience: "",
   },
-  // {
-  //   skill: (
-  //     <img
-  //       src="/image/skills/angular.svg"
-  //       alt="Angular"
-  //       className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
-  //     />
-  //   ),
-  //   name: "Angular",
-  //   experience: "",
-  // },
   {
     skill: (
       <img
@@ -43,39 +34,6 @@ export const SKILLS = [
     name: "Vite",
     experience: "",
   },
-  // {
-  //   skill: (
-  //     <img
-  //       src="/image/skills/dotnet.svg"
-  //       alt=".NET"
-  //       className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
-  //     />
-  //   ),
-  //   name: ".NET",
-  //   experience: "",
-  // },
-  {
-    skill: (
-      <img
-        src="/image/skills/php_dark.svg"
-        alt="PHP"
-        className="w-12.5 sm:w-12.5 md:w-15 lg:w-18.75 xl:w-21.25"
-      />
-    ),
-    name: "PHP",
-    experience: "",
-  },
-  // {
-  //   skill: (
-  //     <img
-  //       src="/image/skills/csharp.svg"
-  //       alt="C#"
-  //       className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
-  //     />
-  //   ),
-  //   name: "C#",
-  //   experience: "",
-  // },
   {
     skill: (
       <img
@@ -134,12 +92,45 @@ export const SKILLS = [
   {
     skill: (
       <img
+        src="/image/skills/axios.svg"
+        alt="Axios"
+        className="w-12.5 sm:w-12.5 md:w-15 lg:w-18.75 xl:w-21.25"
+      />
+    ),
+    name: "Axios",
+    experience: "",
+  },
+  {
+    skill: (
+      <img
         src="/image/skills/jwt.svg"
         alt="JWT"
         className="w-12.5 sm:w-12.5 md:w-15 lg:w-18.75 xl:w-21.25"
       />
     ),
     name: "JWT",
+    experience: "",
+  },
+  {
+    skill: (
+      <img
+        src="/image/skills/gcp-api.svg"
+        alt="API"
+        className="w-12.5 sm:w-12.5 md:w-15 lg:w-18.75 xl:w-21.25"
+      />
+    ),
+    name: "API",
+    experience: "",
+  },
+  {
+    skill: (
+      <img
+        src="/image/skills/gin.svg"
+        alt="Gin"
+        className="w-12.5 sm:w-12.5 md:w-15 lg:w-18.75 xl:w-21.25"
+      />
+    ),
+    name: "Gin",
     experience: "",
   },
   {
@@ -177,7 +168,7 @@ export const SKILLS = [
   },
 ];
 
-export const TOOLS = [
+export const TOOLS: SkillIconItem[] = [
   {
     tool: (
       <img
@@ -187,17 +178,6 @@ export const TOOLS = [
       />
     ),
     name: "Visual Studio Code",
-    experience: "",
-  },
-  {
-    tool: (
-      <img
-        src="/image/skills/cursor_dark.svg"
-        alt="Cursor"
-        className="w-12.5 sm:w-12.5 md:w-15 lg:w-18.75 xl:w-21.25"
-      />
-    ),
-    name: "Cursor",
     experience: "",
   },
   {
@@ -236,28 +216,6 @@ export const TOOLS = [
   {
     tool: (
       <img
-        src="/image/skills/illustrator.svg"
-        alt="Illustrator"
-        className="w-12.5 sm:w-12.5 md:w-15 lg:w-18.75 xl:w-21.25"
-      />
-    ),
-    name: "Adobe Illustrator",
-    experience: "",
-  },
-  {
-    tool: (
-      <img
-        src="/image/skills/photoshop.svg"
-        alt="Photoshop"
-        className="w-12.5 sm:w-12.5 md:w-15 lg:w-18.75 xl:w-21.25"
-      />
-    ),
-    name: "Adobe Photoshop",
-    experience: "",
-  },
-  {
-    tool: (
-      <img
         src="/image/skills/warp.svg"
         alt="Warp"
         className="w-12.5 sm:w-12.5 md:w-15 lg:w-18.75 xl:w-21.25"
@@ -266,35 +224,6 @@ export const TOOLS = [
     name: "Warp",
     experience: "",
   },
-  {
-    tool: (
-      <img
-        src="/image/skills/openai_dark.svg"
-        alt="OpenAI"
-        className="w-12.5 sm:w-12.5 md:w-15 lg:w-18.75 xl:w-21.25"
-      />
-    ),
-    name: "OpenAI",
-    experience: "",
-  },
-  {
-    tool: (
-      <img
-        src="/image/skills/copilot_dark.svg"
-        alt="GitHub Copilot"
-        className="w-12.5 sm:w-12.5 md:w-15 lg:w-18.75 xl:w-21.25"
-      />
-    ),
-    name: "GitHub Copilot",
-    experience: "",
-  },
-  // {
-  //   tool: (
-  //     <SiBruno className="text-5xl sm:text-5xl md:text-[60px] lg:text-[75px] xl:text-[85px] text-[#2E3A59]" />
-  //   ),
-  //   name: "SiBruno",
-  //   experience: "",
-  // },
   {
     tool: (
       <img
@@ -309,17 +238,6 @@ export const TOOLS = [
   {
     tool: (
       <img
-        src="/image/skills/canva.svg"
-        alt="Canva"
-        className="w-12.5 sm:w-12.5 md:w-15 lg:w-18.75 xl:w-21.25"
-      />
-    ),
-    name: "Canva",
-    experience: "",
-  },
-  {
-    tool: (
-      <img
         src="/image/skills/docker.svg"
         alt="Docker"
         className="w-12.5 sm:w-12.5 md:w-15 lg:w-18.75 xl:w-21.25"
@@ -328,20 +246,9 @@ export const TOOLS = [
     name: "Docker",
     experience: "",
   },
-  // {
-  //   tool: (
-  //     <img
-  //       src="/image/skills/n8n.svg"
-  //       alt="n8n"
-  //       className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
-  //     />
-  //   ),
-  //   name: "n8n",
-  //   experience: "",
-  // },
 ];
 
-export const DATABASES = [
+export const DATABASES: SkillIconItem[] = [
   {
     database: (
       <img
@@ -353,17 +260,6 @@ export const DATABASES = [
     name: "MySQL",
     experience: "",
   },
-  // {
-  //   database: (
-  //     <img
-  //       src="/image/skills/sql-server.svg"
-  //       alt="SQL Server"
-  //       className="w-[50px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[85px]"
-  //     />
-  //   ),
-  //   name: "SQL Server",
-  //   experience: "",
-  // },
   {
     database: (
       <img
@@ -388,7 +284,7 @@ export const DATABASES = [
   },
 ];
 
-export const CLOUDS = [
+export const CLOUDS: SkillIconItem[] = [
   {
     cloud: (
       <img
@@ -410,5 +306,52 @@ export const CLOUDS = [
     ),
     name: "Railway",
     experience: "",
+  },
+];
+
+export const SKILL_CATEGORIES: SkillCategory[] = [
+  {
+    title: "Programming language",
+    data: SKILLS.filter(({ name }) =>
+      ["JavaScript", "Typescript", "GoLang"].includes(name),
+    ),
+    extractItems: (item) => [item.skill],
+  },
+  {
+    title: "Front-End",
+    data: SKILLS.filter(({ name }) =>
+      [
+        "React",
+        "Next.js",
+        "Vite",
+        "HTML",
+        "CSS",
+        "Reactrouter",
+        "Axios",
+        "MUI",
+        "Tailwind CSS",
+      ].includes(name),
+    ),
+    extractItems: (item) => [item.skill],
+  },
+  {
+    title: "Back-End",
+    data: SKILLS.filter(({ name }) => ["JWT", "API", "Gin"].includes(name)),
+    extractItems: (item) => [item.skill],
+  },
+  {
+    title: "Database",
+    data: DATABASES,
+    extractItems: (item) => [item.database],
+  },
+  {
+    title: "Dev Tools",
+    data: TOOLS,
+    extractItems: (item) => [item.tool],
+  },
+  {
+    title: "Cloud Platform",
+    data: CLOUDS,
+    extractItems: (item) => [item.cloud],
   },
 ];

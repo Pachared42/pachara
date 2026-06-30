@@ -5,8 +5,12 @@ import pachara from "/pachara.jpg";
 import { gsap, useGSAP } from "../lib/gsap";
 import { shouldReduceMotion } from "../lib/motion";
 
-const Hero = ({ introDone }) => {
-  const heroRef = useRef(null);
+type HeroProps = {
+  introDone: boolean;
+};
+
+const Hero = ({ introDone }: HeroProps) => {
+  const heroRef = useRef<HTMLElement | null>(null);
 
   useGSAP(
     () => {
@@ -71,10 +75,10 @@ const Hero = ({ introDone }) => {
 
             <div className="hero-copy p-2 flex flex-col gap-4 sm:flex-row sm:items-center">
               <button
-                onClick={() => window.open("/Resume-Pachara.pdf", "_blank")}
+                onClick={() => window.open("/Pachara.cv.pdf", "_blank")}
                 className="z-1 hover:bg-white rounded-xl text-white font-semibold hover:text-black py-3 px-8 md:px-10 border border-white/15 transition-colors duration-300 cursor-pointer"
               >
-                ดาวน์โหลด Resume
+                ดาวน์โหลด Pachara.cv
               </button>
             </div>
           </>

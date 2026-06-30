@@ -4,7 +4,11 @@ import { EDUCATION } from "../constants/EducationConstants";
 import { gsap, useGSAP } from "../lib/gsap";
 import { revealInSequence, shouldReduceMotion } from "../lib/motion";
 
-const AboutPanel = ({ revealClass = "" }) => (
+type RevealPanelProps = {
+  revealClass?: string;
+};
+
+const AboutPanel = ({ revealClass = "" }: RevealPanelProps) => (
   <div className="flex h-full flex-col justify-center">
     <h2 className={`${revealClass} mb-1 text-center text-3xl font-bold sm:text-4xl lg:text-6xl`}>
       ABOUT ME
@@ -25,7 +29,7 @@ const AboutPanel = ({ revealClass = "" }) => (
   </div>
 );
 
-const EducationPanel = ({ revealClass = "" }) => (
+const EducationPanel = ({ revealClass = "" }: RevealPanelProps) => (
   <div className="flex h-full flex-col justify-center">
     <h2 className={`${revealClass} mb-1 text-center text-3xl font-bold sm:text-4xl lg:text-6xl`}>
       EDUCATION
@@ -53,13 +57,13 @@ const EducationPanel = ({ revealClass = "" }) => (
 );
 
 const AboutEducation = () => {
-  const sectionRef = useRef(null);
+  const sectionRef = useRef<HTMLElement | null>(null);
 
   useGSAP(
     () => {
       if (shouldReduceMotion()) return;
 
-      gsap.utils.toArray(".about-education-panel").forEach((panel) => {
+      gsap.utils.toArray<HTMLElement>(".about-education-panel").forEach((panel) => {
         revealInSequence(gsap, panel.querySelectorAll(".about-education-reveal"), {
           trigger: panel,
           y: 32,

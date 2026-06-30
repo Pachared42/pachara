@@ -3,7 +3,7 @@ import { gsap, useGSAP } from "../lib/gsap";
 import { revealInSequence, shouldReduceMotion } from "../lib/motion";
 
 function Footer() {
-  const footerRef = useRef(null);
+  const footerRef = useRef<HTMLElement | null>(null);
   const year = new Date().getFullYear();
 
   useGSAP(

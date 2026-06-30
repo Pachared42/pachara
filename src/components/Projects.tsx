@@ -2,10 +2,17 @@ import { useMemo, useRef, useState } from "react";
 import { PROJECTS } from "../constants/ProjectConstants";
 import { gsap, useGSAP } from "../lib/gsap";
 import { revealInSequence, shouldReduceMotion } from "../lib/motion";
+import type { Project, ProjectCategory } from "../types";
 
-const CATS = ["All", "Web", "Frontend", "Backend", "Fullstack", "Desktop"];
+const CATS: ProjectCategory[] = ["All", "Web", "Frontend", "Backend", "Fullstack", "Desktop"];
 
-const ProjectStackCard = ({ project, index, total }) => {
+type ProjectStackCardProps = {
+  project: Project;
+  index: number;
+  total: number;
+};
+
+const ProjectStackCard = ({ project, index, total }: ProjectStackCardProps) => {
   const stackOffset = Math.min(index, 7) * 28;
   const shouldLoadEarly = index < 2;
 
@@ -65,8 +72,8 @@ const ProjectStackCard = ({ project, index, total }) => {
 };
 
 const Projects = () => {
-  const [cat, setCat] = useState("All");
-  const projectsRef = useRef(null);
+  const [cat, setCat] = useState<ProjectCategory>("All");
+  const projectsRef = useRef<HTMLElement | null>(null);
 
   const normalized = useMemo(() => {
     return PROJECTS.map((p) => ({
@@ -80,7 +87,7 @@ const Projects = () => {
     return normalized.filter((p) => p.category === cat);
   }, [cat, normalized]);
 
-  const handleChangeCat = (next) => {
+  const handleChangeCat = (next: ProjectCategory) => {
     setCat(next);
   };
 
@@ -92,8 +99,8 @@ const Projects = () => {
         trigger: projectsRef.current,
       });
 
-      const cards = gsap.utils.toArray(".project-stack-card");
-      const cardBodies = gsap.utils.toArray(".project-stack-card-inner");
+      const cards = gsap.utils.toArray<HTMLElement>(".project-stack-card");
+      const cardBodies = gsap.utils.toArray<HTMLElement>(".project-stack-card-inner");
 
       cardBodies.forEach((cardBody) => {
         revealInSequence(gsap, cardBody, {

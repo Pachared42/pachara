@@ -4,7 +4,7 @@ import { gsap, useGSAP } from "../lib/gsap";
 import { revealInSequence, shouldReduceMotion } from "../lib/motion";
 
 const Experience = () => {
-    const experienceRef = useRef(null);
+    const experienceRef = useRef<HTMLElement | null>(null);
 
     useGSAP(
         () => {

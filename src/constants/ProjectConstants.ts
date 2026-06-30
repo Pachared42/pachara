@@ -7,8 +7,9 @@ import RedisDashboard from "/image/projectImage/Redis.png"
 import RentFlow from "/image/projectImage/RentFlow.png"
 import DocumentSemina from "/image/projectImage/document-semina.png"
 import SCISTOCKAPI from "/image/projectImage/sci-stock-api.png"
+import type { Project } from "../types";
 
-export const PROJECTS = [
+export const PROJECTS: Project[] = [
   {
     id: 1,
     name: "เว็บไซต์ Portfolio ส่วนตัว",

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { type MouseEvent, useState } from "react";
 import logo from "/Pachara.png";
 import { NAVIGATION_LINKS } from "../constants/NavbarConstants";
 import { FaTimes } from "react-icons/fa";
@@ -12,7 +12,7 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const handleLinkClick = (e, href) => {
+  const handleLinkClick = (e: MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     const targetElement = document.querySelector(href);
 

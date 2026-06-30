@@ -4,7 +4,7 @@ import { gsap, useGSAP } from "../lib/gsap";
 import { revealInSequence, shouldReduceMotion } from "../lib/motion";
 
 const Education = () => {
-    const educationRef = useRef(null);
+    const educationRef = useRef<HTMLElement | null>(null);
 
     useGSAP(
         () => {
