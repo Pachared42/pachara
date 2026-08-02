@@ -30,7 +30,7 @@ export default function LoadingOverlay({ open }: LoadingOverlayProps) {
     <AnimatePresence mode="popLayout">
       {open && (
         <motion.div
-          className="fixed inset-0 z-[9999] flex items-center justify-center"
+          className="fixed inset-0 z-9999 flex items-center justify-center"
           initial={false}
           exit={{ transition: { duration: 0.95, ease: [0.22, 1, 0.36, 1] } }}
           onWheel={(e) => e.preventDefault()}
@@ -48,7 +48,7 @@ export default function LoadingOverlay({ open }: LoadingOverlayProps) {
               layoutId="pachara-logo"
               src="/Pachara.png"
               alt="Pachara"
-              className="h-auto w-[16rem] object-contain sm:w-[22rem] md:w-[30rem]"
+              className="h-auto w-[16rem] object-contain sm:w-88 md:w-120"
               draggable={false}
               initial={{ opacity: 0, scale: 0.92 }}
               animate={{ opacity: 1, scale: 1 }}

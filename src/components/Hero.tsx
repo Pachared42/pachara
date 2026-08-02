@@ -56,7 +56,7 @@ const Hero = ({ introDone }: HeroProps) => {
               layoutId="pachara-logo"
               src="/Pachara.png"
               alt={HERO.name}
-              className="h-auto w-full max-w-[18rem] object-contain sm:max-w-[24rem] md:max-w-[22rem] lg:max-w-[31rem] xl:max-w-[37rem]"
+              className="h-auto w-full max-w-[18rem] object-contain sm:max-w-[24rem] md:max-w-88 lg:max-w-124 xl:max-w-148"
               draggable={false}
               transition={{ duration: 0.95, ease: [0.22, 1, 0.36, 1] }}
             />
